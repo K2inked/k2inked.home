@@ -8,7 +8,7 @@ import { STATIC_ROUTES } from "@/routes";
 
 export const Hero = () => (
   <BackgroundImage
-    src="/images/bg-placeholder.png"
+    src="/images/background.png"
     alt="Zdjęcie przedstawiające tatuaż w trakcie wykonywania"
     priority
   >

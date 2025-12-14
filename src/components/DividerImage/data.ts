@@ -6,16 +6,15 @@ type DividerItem = {
 
 export const DividersData: DividerItem[] = [
   {
-    id: "placeholder1",
-    src: "/images/dividers/placeholder1.png",
-    alt: "x",
+    id: "divider1",
+    src: "/images/dividers/divider_1.png",
+    alt: "Zdjęcie przedstawiające Kari - artystkę tatuażu podczas pracy",
   },
   {
-    id: "placeholder2",
-    src: "/images/dividers/placeholder2.png",
-    alt: "x",
+    id: "divider2",
+    src: "/images/dividers/divider_2.png",
+    alt: "Zdjęcie przedstawiające fragment studia tatuażu K2.inked w Warszawie",
   },
-  { id: "placeholder3", src: "/images/dividers/placeholder3.png", alt: "x" },
+  { id: "divider3", src: "/images/dividers/divider_3.png", alt: "Zdjęcie przedstawiające fragment studia tatuażu K2.inked w Warszawie" },
 ] as const;
 
-// Data to swap when images are available

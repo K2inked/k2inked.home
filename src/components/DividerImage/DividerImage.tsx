@@ -51,7 +51,7 @@ export const DividerImage = ({ id }: DividerProps) => {
       ref={rootRef}
       className="tablet:h-[300px] desktop:h-[400px] relative h-[250px] overflow-hidden"
     >
-      <div ref={innerRef} className="absolute -inset-40 will-change-transform">
+      <div ref={innerRef} className="absolute -inset-30 will-change-transform">
         <Image
           src={divider.src}
           alt={divider.alt}

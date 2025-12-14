@@ -13,11 +13,11 @@ export default function Home() {
       <Hero />
       <Sentinel />
       <Studio />
-      <DividerImage  id="placeholder2"/>
+      <DividerImage  id="divider1"/>
       <Team />
-      <DividerImage  id="placeholder2"/>
+      <DividerImage  id="divider2"/>
       <GalleryLanding />
-      <DividerImage  id="placeholder2"/>
+      <DividerImage  id="divider3"/>
       <Opinions />
       <ContactLanding />
     </>
