@@ -36,7 +36,7 @@ export const ArtistGallery = ({ images, name, className }: Props) => {
       <div
         className={
           className ??
-          "tablet:grid-cols-3 tablet:gap-12.5 grid grid-cols-2 gap-6"
+          "tablet:grid-cols-2 tablet:gap-12.5 grid grid-cols-2 gap-6"
         }
       >
         {images.map((src, i) => (
