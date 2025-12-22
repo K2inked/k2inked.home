@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import { cn } from "@/utils";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 
@@ -128,6 +129,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
         <Script
           id="ld-localbusiness"
           type="application/ld+json"
