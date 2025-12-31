@@ -1,9 +1,9 @@
-type Block =
+export type Block =
   | { type: "p"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "h3"; text: string };
 
-type Section = {
+export type Section = {
   heading: string;
   blocks: Block[];
 };
