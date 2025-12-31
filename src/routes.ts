@@ -7,6 +7,7 @@ export const STATIC_ROUTES = {
   HOME: "/",
   GALLERY: "/galeria",
   REGULATIONS: "/regulamin",
+  COOKIES_POLICY: "/polityka-cookies",
   CONTACT: "/kontakt",
 } as const;
 
