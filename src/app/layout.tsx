@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import { cn } from "@/utils";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import { CookiesBanner } from "@/components/CookiesBanner/CookiesBanner";
@@ -22,7 +22,7 @@ const marcellusSC = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://k2inked.pl"), // to change later to real domain
+  metadataBase: new URL("https://k2inked.pl"),
   title: {
     default: "K2.inked — Studio tatuażu Warszawa",
     template: "%s | K2.inked — Studio tatuażu Warszawa",
@@ -89,9 +89,7 @@ export const metadata: Metadata = {
   },
   category: "beauty",
   verification: {
-    // To replace later with real codes
-    google: "", // e.g. "google-site-verification-code"
-    //other: { "facebook-domain-verification": [""] },
+    google: "xq3Wv62gjYFY8V6_Dvz8Wy5zGMtaLquZ8y7hm2tdsoI",
   },
   icons: {
     icon: [
@@ -127,9 +125,8 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main className="flex-grow">{children}
-          <CookiesBanner/>
-        </main>
+        <main className="flex-grow">{children}</main>
+        <CookiesBanner />
         <Footer />
         <Analytics />
         <SpeedInsights />
@@ -142,7 +139,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "TattooParlor",
             name: "K2.inked",
-            url: "https://k2inked.pl", 
+            url: "https://k2inked.pl",
             telephone: "+48 883 308 451",
             priceRange: "$$$",
             address: {
