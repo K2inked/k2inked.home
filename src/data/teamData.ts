@@ -173,6 +173,42 @@ export const TEAM = {
       ogImage: "/og/kuba-og.jpg",
     },
   },
+  kinia: {
+    name: "Kinia",
+    imgSrc: "/images/team/image00015.jpeg",
+    hoverImgSrc: "/images/team/image00015.jpeg",
+    style: "realism / color / anime",
+    paragraph: [
+      "Kinia aka @fluffykitty.ink to nasza miłośniczka mangi i anime. Detaliczne prace to jej specjalność, ale nie boi się dużych kompozycji, koloru i realizmu!",
+      "Prywatnie Kinia to człowiek złota rączka, nie tylko w tatuażu. Nie ma rzeczy, z którą sobie nie poradzi. Azja to jej drugi dom, kiedy tylko może to ucieka do Japonii.. cóż muszę przyznać, że trochę jej tego zazdrościmy 🤍🪭",
+      "Masz pomysł na tatuaż z anime, ale boisz się, że Twojej wizji nie da się zobrazować? Śmiało! Kinia na pewno sobie z tym poradzi ✨",
+    ],
+    gallery: buildGallery("kinia", 32),
+    instagramUsername: "fluffykitty.ink",
+    seo: {
+      title: "Kinia — tatuaż realism / color / anime | K2.inked",
+      description:
+        "Kinia z K2.inked w Warszawie specjalizuje się w tatuażach anime i kolorowych projektach. Zobacz jej portfolio i umów wizytę.",
+      keywords: ["tatuaż Warszawa", "tattoo Warsaw", "Kinia K2"],
+      ogImage: "/og/kinia-og.jpg",
+    },
+  },
+  kamila: {
+    name: "Kamila",
+    imgSrc: "/images/team/image00016.jpeg", 
+    hoverImgSrc: "/images/team/image00016.jpeg",
+    style: "blackwork / organic / alien",
+    paragraph: ["Kamila specjalizuje się w blackworku oraz formach organiczno-alienowych. Tworzy projekty inspirowane strukturami natury, mroczną estetyką i cyberowymi detalami, łącząc je z neotribalem. Jej prace są surowe, intensywne i pełne charakteru – często powstają w formie freehandu, dzięki czemu idealnie dopasowują się do ciała i jego naturalnych linii.", "Choć najlepiej czuje się w mocnych, wyrazistych kompozycjach, z przyjemnością wykonuje również delikatniejsze projekty.", "Prywatnie Kamila to kocia mama i prawdziwa artystyczna dusza – tworzy biżuterię z recyklingu i maluje obrazy."],
+    gallery: buildGallery("kamila", 12),
+    instagramUsername: "he.xod_ttt",
+    seo: {
+      title: "Kamila — tatuaż blackwork / organic / alien | K2.inked",
+      description:
+        "Kamila z K2.inked w Warszawie specjalizuje się w tatuażach blackwork oraz organiczno-alienowych. Zobacz jej portfolio i umów wizytę.",
+      keywords: ["tatuaż Warszawa", "tattoo Warsaw", "Kamila K2"],
+      ogImage: "/og/kamila-og.jpg",
+    },
+  },
 } satisfies Record<ArtistSlug, BaseTeamMember>;
 
 export type TeamMember = {

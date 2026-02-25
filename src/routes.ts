@@ -19,6 +19,8 @@ export const ARTIST_SLUGS = [
   "mirella",
   "emi",
   "kuba",
+  "kinia",
+  "kamila",
 ] as const;
 
 export const path = {
