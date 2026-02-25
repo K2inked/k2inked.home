@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://k2inked.pl/ewelina", lastModified: new Date() },
     { url: "https://k2inked.pl/mirella", lastModified: new Date() },
     { url: "https://k2inked.pl/emi", lastModified: new Date() },
-    { url: "https://k2inked.pl/kuba", lastModified: new Date() }
+    { url: "https://k2inked.pl/kuba", lastModified: new Date() },
+    { url: "https://k2inked.pl/kinia", lastModified: new Date() },
+    { url: "https://k2inked.pl/kamila", lastModified: new Date() }
   ];
 }
