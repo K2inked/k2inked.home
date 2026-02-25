@@ -20,7 +20,7 @@ export const HeaderTabAndDesk = ({
   return (
     <div
       className={[
-        "text-light inset-x-0 top-0 z-50 hidden md:flex",
+        "text-light fixed inset-x-0 top-0 z-50 hidden md:flex",
         isHero ? "absolute bg-transparent" : "bg-darker drop-shadow-lg/20",
       ].join(" ")}
     >
