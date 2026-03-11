@@ -176,7 +176,7 @@ export const TEAM = {
   kinia: {
     name: "Kinia",
     imgSrc: "/images/team/image00015.jpeg",
-    hoverImgSrc: "/images/team/image00015.jpeg",
+    hoverImgSrc: "/images/team/image00016.jpeg",
     style: "realism / color / anime",
     paragraph: [
       "Kinia aka @fluffykitty.ink to nasza miłośniczka mangi i anime. Detaliczne prace to jej specjalność, ale nie boi się dużych kompozycji, koloru i realizmu!",
@@ -195,7 +195,7 @@ export const TEAM = {
   },
   kamila: {
     name: "Kamila",
-    imgSrc: "/images/team/image00016.jpeg", 
+    imgSrc: "/images/team/image00017.jpeg", 
     hoverImgSrc: "/images/team/image00016.jpeg",
     style: "blackwork / organic / alien",
     paragraph: ["Kamila specjalizuje się w blackworku oraz formach organiczno-alienowych. Tworzy projekty inspirowane strukturami natury, mroczną estetyką i cyberowymi detalami, łącząc je z neotribalem. Jej prace są surowe, intensywne i pełne charakteru – często powstają w formie freehandu, dzięki czemu idealnie dopasowują się do ciała i jego naturalnych linii.", "Choć najlepiej czuje się w mocnych, wyrazistych kompozycjach, z przyjemnością wykonuje również delikatniejsze projekty.", "Prywatnie Kamila to kocia mama i prawdziwa artystyczna dusza – tworzy biżuterię z recyklingu i maluje obrazy."],
