@@ -1,22 +1,29 @@
 import type { MetadataRoute } from "next";
+import { ARTIST_SLUGS } from "@/routes";
+import { guides } from "./poradniki/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.k2inked.pl";
+  const now = new Date();
+
+  const staticPaths = [
+    "/",
+    "/galeria",
+    "/faq",
+    "/cennik",
+    "/piercing",
+    "/poradniki",
+    "/kontakt",
+    "/regulamin",
+    "/polityka-cookies",
+  ];
+
   return [
-    { url: `${base}/`, lastModified: new Date() },
-    { url: `${base}/galeria`, lastModified: new Date() },
-    { url: `${base}/faq`, lastModified: new Date() },
-    { url: `${base}/kontakt`, lastModified: new Date() },
-    { url: `${base}/regulamin`, lastModified: new Date() },
-    { url: `${base}/polityka-cookies`, lastModified: new Date() },
-    { url: `${base}/klaudia`, lastModified: new Date() },
-    { url: `${base}/kari`, lastModified: new Date() },
-    { url: `${base}/sonia`, lastModified: new Date() },
-    { url: `${base}/ewelina`, lastModified: new Date() },
-    { url: `${base}/mirella`, lastModified: new Date() },
-    { url: `${base}/emi`, lastModified: new Date() },
-    { url: `${base}/kuba`, lastModified: new Date() },
-    { url: `${base}/kinia`, lastModified: new Date() },
-    { url: `${base}/kamila`, lastModified: new Date() },
+    ...staticPaths.map((p) => ({ url: `${base}${p}`, lastModified: now })),
+    ...guides.map((g) => ({
+      url: `${base}/poradniki/${g.slug}`,
+      lastModified: now,
+    })),
+    ...ARTIST_SLUGS.map((slug) => ({ url: `${base}/${slug}`, lastModified: now })),
   ];
 }

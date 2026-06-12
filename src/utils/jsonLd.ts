@@ -50,6 +50,38 @@ export const breadcrumbLd = (crumbs: Crumb[]): string =>
 
 type FaqItem = { q: string; a: string };
 
+type ArticleArgs = {
+  headline: string;
+  description: string;
+  slug: string;
+  datePublished: string;
+};
+
+/** Article schema dla poradników — sygnał E-E-A-T + cytowania w AI search. */
+export const articleLd = ({
+  headline,
+  description,
+  slug,
+  datePublished,
+}: ArticleArgs): string =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    datePublished,
+    dateModified: datePublished,
+    inLanguage: "pl-PL",
+    mainEntityOfPage: `${SITE}/poradniki/${slug}`,
+    author: { "@type": "Organization", name: "K2inked", url: SITE },
+    publisher: {
+      "@type": "Organization",
+      name: "K2inked",
+      url: SITE,
+      "@id": STUDIO_ID,
+    },
+  });
+
 /** FAQPage schema z listy pytań/odpowiedzi (dla /faq i mini-FAQ artystów). */
 export const faqPageLd = (items: FaqItem[]): string =>
   JSON.stringify({
