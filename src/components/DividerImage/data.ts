@@ -13,8 +13,8 @@ export const DividersData: DividerItem[] = [
   {
     id: "divider2",
     src: "/images/dividers/divider_2.png",
-    alt: "Zdjęcie przedstawiające fragment studia tatuażu K2.inked w Warszawie",
+    alt: "Zdjęcie przedstawiające fragment studia tatuażu K2inked w Warszawie",
   },
-  { id: "divider3", src: "/images/dividers/divider_3.png", alt: "Zdjęcie przedstawiające fragment studia tatuażu K2.inked w Warszawie" },
+  { id: "divider3", src: "/images/dividers/divider_3.png", alt: "Zdjęcie przedstawiające fragment studia tatuażu K2inked w Warszawie" },
 ] as const;
 

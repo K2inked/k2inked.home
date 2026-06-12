@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Script from "next/script";
 import { cn } from "@/utils";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -22,13 +21,13 @@ const marcellusSC = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://k2inked.pl"),
+  metadataBase: new URL("https://www.k2inked.pl"),
   title: {
-    default: "K2.inked — Studio tatuażu Warszawa",
-    template: "%s | K2.inked — Studio tatuażu Warszawa",
+    default: "K2inked — Studio tatuażu Warszawa",
+    template: "%s | K2inked — Studio tatuażu Warszawa",
   },
   description:
-    "K2.inked — profesjonalne studio tatuażu w sercu Warszawy. Autorskie projekty, higiena, precyzja i indywidualne podejście. Zarezerwuj termin.",
+    "K2inked — profesjonalne studio tatuażu w sercu Warszawy. Autorskie projekty, higiena, precyzja i indywidualne podejście. Zarezerwuj termin.",
   keywords: [
     "tatuaż Warszawa",
     "studio tatuażu Warszawa",
@@ -41,10 +40,10 @@ export const metadata: Metadata = {
     "k2inked",
     "K2 inked",
   ],
-  applicationName: "K2.inked",
+  applicationName: "K2inked",
   authors: [{ name: "Agata Kuklińska" }],
   creator: "Agata Kuklińska",
-  publisher: "K2.inked",
+  publisher: "K2inked",
   alternates: {
     canonical: "/",
     languages: {
@@ -54,25 +53,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    title: "K2.inked — Studio tatuażu Warszawa",
+    title: "K2inked — Studio tatuażu Warszawa",
     description:
       "Profesjonalne studio tatuażu w sercu Warszawy. Zobacz portfolio artystek i umów wizytę.",
-    siteName: "K2.inked",
+    siteName: "K2inked",
     locale: "pl_PL",
     images: [
       {
         url: "/og/k2-og.jpg", // <-- export a 1200x630 image, add later
         width: 1200,
         height: 630,
-        alt: "K2.inked — Studio tatuażu Warszawa",
+        alt: "K2inked — Studio tatuażu Warszawa",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "K2.inked — Studio tatuażu Warszawa",
+    title: "K2inked — Studio tatuażu Warszawa",
     description:
-      "Profesjonalne studio tatuażu, higiena i precyzja. Zarezerwuj termin w K2.inked.",
+      "Profesjonalne studio tatuażu, higiena i precyzja. Zarezerwuj termin w K2inked.",
     // images: ["/og/k2-og.jpg"], <-- to add later if needed
   },
   robots: {
@@ -130,36 +129,50 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
-        <Script
-          id="ld-localbusiness"
+        <script
           type="application/ld+json"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TattooParlor",
-            name: "K2.inked",
-            url: "https://k2inked.pl",
-            telephone: "+48 883 308 451",
-            priceRange: "$$$",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Krucza 47A",
-              addressLocality: "Warszawa",
-              postalCode: "00-509",
-              addressCountry: "PL",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 52.2302385893085,
-              longitude: 21.016352031548752,
-            },
-            sameAs: [
-              "https://www.instagram.com/k2.inked",
-              "https://www.facebook.com/k2.inked",
-            ],
-          })}
-        </Script>
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TattooParlor",
+              "@id": "https://www.k2inked.pl/#studio",
+              name: "K2inked",
+              url: "https://www.k2inked.pl",
+              telephone: "+48 883 308 451",
+              priceRange: "$$$",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Krucza 47A",
+                addressLocality: "Warszawa",
+                addressRegion: "Śródmieście",
+                postalCode: "00-509",
+                addressCountry: "PL",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 52.2302385893085,
+                longitude: 21.016352031548752,
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ],
+                opens: "11:00",
+                closes: "17:00",
+              },
+              sameAs: [
+                "https://www.instagram.com/k2inked",
+                "https://www.facebook.com/k2.inked",
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );

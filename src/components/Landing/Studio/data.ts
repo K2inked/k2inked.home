@@ -18,18 +18,18 @@ export const TarotCardsData: TarotItem[] = [
   {
     id: "tarot1",
     src: "/images/studio/tarot_1.jpeg",
-    alt: "Karta tarota przedstawiająca członków K2.inked",
+    alt: "Karta tarota przedstawiająca członków K2inked",
     flippedSrc: "/images/studio/studio_1.jpg",
-    flippedAlt: "Zdjęcie przedstawiające wnętrze studia K2.inked",
+    flippedAlt: "Zdjęcie przedstawiające wnętrze studia K2inked",
     content:
       "Jesteśmy zespołem, który traktuje się jak rodzina i współpracuje od lat. To przekłada się na luźną, komfortową atmosferę – bez napięć, bez dziwnych akcji, za to z dobrą energią.",
   },
   {
     id: "tarot2",
     src: "/images/studio/tarot_2.jpeg",
-    alt: "Karta tarota przedstawiająca poczekalnię studia K2.inked",
+    alt: "Karta tarota przedstawiająca poczekalnię studia K2inked",
     flippedSrc: "/images/studio/studio_2.jpg",
-    flippedAlt: "Zdjęcie przedstawiające wnętrze studia K2.inked",
+    flippedAlt: "Zdjęcie przedstawiające wnętrze studia K2inked",
     content:
       "Każdy krok w naszym studiu to coś nowego do odkrycia. K2 to przestrzeń pełna detali — vintage meble, obrazy,rzeźby, które razem tworzą jedną wielką galerię sztuki.",
   },
@@ -47,7 +47,7 @@ export const TarotCardsData: TarotItem[] = [
     src: "/images/studio/tarot_3.jpeg",
     alt: "Karta tarota przedstawiająca galerię rycin",
     flippedSrc: "/images/studio/studio_4.jpg",
-    flippedAlt: "Zdjęcie przedstawiające galerię rycin w studiu K2.inked",
+    flippedAlt: "Zdjęcie przedstawiające galerię rycin w studiu K2inked",
     content:
       "Wyjdziesz od nas ze sztuką nie tylko na skórze. Nasz team to artyści w pełnym wymiarze – ich pasja przejawia się też w obrazach, rzeźbach i rzeczach handmade.",
   },

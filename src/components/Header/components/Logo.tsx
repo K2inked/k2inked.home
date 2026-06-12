@@ -10,7 +10,7 @@ type LogoProps = {
 export const Logo = ({ className, logoClassName }: LogoProps) => (
   <Link
     href={STATIC_ROUTES.HOME}
-    aria-label="Przejdź do strony głównej salonu K2.Inked"
+    aria-label="Przejdź do strony głównej salonu K2inked"
     className={logoClassName}
   >
     <LogoK2Inked className={className} />

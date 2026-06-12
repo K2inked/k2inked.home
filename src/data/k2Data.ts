@@ -5,7 +5,7 @@ export const K2INKED_DATA = {
   email: "k2inked.zapisy@gmail.com",
   socialMedia: {
     facebook: "https://www.facebook.com/share/16zqfQMuDb/?mibextid=wwXIfr",
-    instagram: "https://www.instagram.com/k2.inked",
+    instagram: "https://www.instagram.com/k2inked",
     tiktok: "",
   },
   openDays: "Poniedziałek - Sobota",

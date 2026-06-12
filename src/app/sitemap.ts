@@ -1,23 +1,21 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const base = "https://www.k2inked.pl";
   return [
-    { url: "https://k2inked.pl/", lastModified: new Date() },
-    { url: "https://k2inked.pl/galeria", lastModified: new Date() },
-    { url: "https://k2inked.pl/kontakt", lastModified: new Date() },
-    { url: "https://k2inked.pl/regulamin", lastModified: new Date() },
-    {
-      url: "https://k2inked.pl/polityka-cookies",
-      lastModified: new Date(),
-    },
-    { url: "https://k2inked.pl/klaudia", lastModified: new Date() },
-    { url: "https://k2inked.pl/kari", lastModified: new Date() },
-    { url: "https://k2inked.pl/sonia", lastModified: new Date() },
-    { url: "https://k2inked.pl/ewelina", lastModified: new Date() },
-    { url: "https://k2inked.pl/mirella", lastModified: new Date() },
-    { url: "https://k2inked.pl/emi", lastModified: new Date() },
-    { url: "https://k2inked.pl/kuba", lastModified: new Date() },
-    { url: "https://k2inked.pl/kinia", lastModified: new Date() },
-    { url: "https://k2inked.pl/kamila", lastModified: new Date() }
+    { url: `${base}/`, lastModified: new Date() },
+    { url: `${base}/galeria`, lastModified: new Date() },
+    { url: `${base}/kontakt`, lastModified: new Date() },
+    { url: `${base}/regulamin`, lastModified: new Date() },
+    { url: `${base}/polityka-cookies`, lastModified: new Date() },
+    { url: `${base}/klaudia`, lastModified: new Date() },
+    { url: `${base}/kari`, lastModified: new Date() },
+    { url: `${base}/sonia`, lastModified: new Date() },
+    { url: `${base}/ewelina`, lastModified: new Date() },
+    { url: `${base}/mirella`, lastModified: new Date() },
+    { url: `${base}/emi`, lastModified: new Date() },
+    { url: `${base}/kuba`, lastModified: new Date() },
+    { url: `${base}/kinia`, lastModified: new Date() },
+    { url: `${base}/kamila`, lastModified: new Date() },
   ];
 }

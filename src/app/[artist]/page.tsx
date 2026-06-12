@@ -46,7 +46,7 @@ const ArtistPage = async ({ params }: ArtistPageProps) => {
         </div>
         <div className="tablet:flex-col-reverse tablet:items-start flex max-w-3xl flex-col items-center gap-8">
           <InstagramMember
-            username={member.instagramUsername || "k2.inked"}
+            username={member.instagramUsername || "k2inked"}
             className="tablet:size-10 size-7.5"
           />
           <article className="tablet:text-base tablet:max-w-110 space-y-4 text-sm">
@@ -77,14 +77,14 @@ export async function generateMetadata({
   const title =
     seo.title ??
     (isEmi
-      ? "Emi — piercing | K2.inked"
-      : `${member.name} — portfolio tatuaży | K2.inked`);
+      ? "Emi — piercing | K2inked"
+      : `${member.name} — portfolio tatuaży | K2inked`);
 
   const description =
     seo.description ??
     (isEmi
-      ? "Emi — profesjonalne przekłucia w K2.inked w Warszawie. Higiena, precyzja i doradztwo w doborze biżuterii."
-      : `Tatuaże autorstwa ${member.name} w K2.inked Warszawa. Zobacz portfolio i umów wizytę.`);
+      ? "Emi — profesjonalne przekłucia w K2inked w Warszawie. Higiena, precyzja i doradztwo w doborze biżuterii."
+      : `Tatuaże autorstwa ${member.name} w K2inked Warszawa. Zobacz portfolio i umów wizytę.`);
 
   const keywords =
     seo.keywords ??
@@ -102,7 +102,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://k2.inked.pl/${artist}`,
+      url: `https://www.k2inked.pl/${artist}`,
       images: [{ url: ogImage, width: 1200, height: 630, alt: member.name }],
     },
     twitter: {

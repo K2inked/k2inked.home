@@ -32,9 +32,9 @@ export default ContactPage;
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Kontakt | K2.inked",
+    title: "Kontakt | K2inked",
     description:
-      "Skontaktuj się z K2.inked, profesjonalnym studiem tatuażu w Warszawie. Zarezerwuj wizytę lub zadawaj pytania.",
+      "Skontaktuj się z K2inked, profesjonalnym studiem tatuażu w Warszawie. Zarezerwuj wizytę lub zadawaj pytania.",
     alternates: { canonical: "/kontakt" },
   };
 }

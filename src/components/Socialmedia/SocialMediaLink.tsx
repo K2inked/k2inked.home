@@ -13,7 +13,7 @@ export const SocialmediaLink = {
     <a
       href={K2INKED_DATA.socialMedia.facebook}
       title="Facebook"
-      aria-label="Oficjalny profil salonu K2.inked na Facebooku"
+      aria-label="Oficjalny profil salonu K2inked na Facebooku"
       target="_blank"
       rel="noopener noreferrer"
       className="transition-opacity hover:opacity-80"
@@ -26,7 +26,7 @@ export const SocialmediaLink = {
     <a
       href={K2INKED_DATA.socialMedia.instagram}
       title="Instagram"
-      aria-label="Oficjalny profil salonu K2.inked na Instagramie"
+      aria-label="Oficjalny profil salonu K2inked na Instagramie"
       target="_blank"
       rel="noopener noreferrer"
       className="transition-opacity hover:opacity-80"
@@ -38,7 +38,7 @@ export const SocialmediaLink = {
     <a
       href={K2INKED_DATA.socialMedia.tiktok}
       title="Tiktok"
-      aria-label="Oficjalny profil salonu K2.inked na Tiktoku"
+      aria-label="Oficjalny profil salonu K2inked na Tiktoku"
       target="_blank"
       rel="noopener noreferrer"
       className="transition-opacity hover:opacity-80"
