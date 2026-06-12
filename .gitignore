@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+planning/
+DRAFT-*.md
+TESTING-*-JUTRO.md
+CLAUDE.local.md
+
+# MSTUDIO internal docs — repo klienta jest PUBLICZNE, te pliki NIE mogą wyciec
+/.claude/
+/docs/
+/active/
+/CLAUDE.md
+# wyjątek: llms.txt to legit plik strony (ma być wdrożony)
+!/public/llms.txt
