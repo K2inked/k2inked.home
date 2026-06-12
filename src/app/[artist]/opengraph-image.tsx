@@ -46,7 +46,6 @@ export default async function ArtistOgImage({
         }}
       >
         {photo ? (
-          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={photo}
             alt=""

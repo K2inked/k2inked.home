@@ -14,7 +14,6 @@ type BaseTeamMember = {
     title: string;
     description: string;
     keywords: string[];
-    ogImage?: string; // optional; gdy brak, generateMetadata używa zdjęcia artysty (member.imgSrc)
   };
 };
 
@@ -59,7 +58,6 @@ export const TEAM = {
       description:
         "Klaudia z K2inked w Warszawie tworzy tatuaże w stylu fineline i single needle. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż fineline Warszawa", "fineline tattoo", "Klaudia K2"],
-      ogImage: "/og/klaudia-og.jpg",
     },
   },
   kari: {
@@ -94,7 +92,6 @@ export const TEAM = {
       description:
         "Kari z K2inked w Warszawie tworzy tatuaże w stylu blackwork i realizmu. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż blackwork Warszawa", "blackwork tattoo", "Kari K2"],
-      ogImage: "/og/kari-og.jpg",
     },
   },
   sonia: {
@@ -129,7 +126,6 @@ export const TEAM = {
       description:
         "Sonia z K2inked w Warszawie tworzy tatuaże w stylu fine line i ornamentów. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż fine line Warszawa", "fine line tattoo", "Sonia K2"],
-      ogImage: "/og/sonia-og.jpg",
     },
   },
   ewelina: {
@@ -165,7 +161,6 @@ export const TEAM = {
       description:
         "Ewelina z K2inked w Warszawie tworzy tatuaże w stylu dotwork. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż dotwork Warszawa", "dotwork tattoo", "Ewelina K2"],
-      ogImage: "/og/ewelina-og.jpg",
     },
   },
   mirella: {
@@ -200,7 +195,6 @@ export const TEAM = {
       description:
         "Mirella z K2inked w Warszawie tworzy tatuaże w stylu fine line i microrealism. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż fine line Warszawa", "fine line tattoo", "Mirella K2"],
-      ogImage: "/og/mirella-og.jpg",
     },
   },
   emi: {
@@ -270,7 +264,6 @@ export const TEAM = {
       description:
         "Kuba z K2inked w Warszawie tworzy tatuaże w stylu blackwork, rycin i letteringu. Zobacz jego portfolio i umów wizytę.",
       keywords: ["tatuaż Warszawa", "tattoo Warsaw", "Kuba K2"],
-      ogImage: "/og/kuba-og.jpg",
     },
   },
   kinia: {
@@ -304,7 +297,6 @@ export const TEAM = {
       description:
         "Kinia z K2inked w Warszawie specjalizuje się w tatuażach anime i kolorowych projektach. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż Warszawa", "tattoo Warsaw", "Kinia K2"],
-      ogImage: "/og/kinia-og.jpg",
     },
   },
   kamila: {
@@ -334,7 +326,6 @@ export const TEAM = {
       description:
         "Kamila z K2inked w Warszawie specjalizuje się w tatuażach blackwork oraz organiczno-alienowych. Zobacz jej portfolio i umów wizytę.",
       keywords: ["tatuaż Warszawa", "tattoo Warsaw", "Kamila K2"],
-      ogImage: "/og/kamila-og.jpg",
     },
   },
 } satisfies Record<ArtistSlug, BaseTeamMember>;

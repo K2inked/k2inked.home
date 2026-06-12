@@ -5,9 +5,9 @@ import type { FaqItem } from "@/app/faq/data";
 // więc działa na jasnym i ciemnym tle.
 export const FaqList = ({ items }: { items: FaqItem[] }) => (
   <div className="w-full">
-    {items.map((item, i) => (
+    {items.map((item) => (
       <details
-        key={i}
+        key={item.q}
         className="border-current/15 group border-b last:border-b-0"
       >
         <summary className="tablet:text-lg flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-base font-medium tracking-[0.06em]">

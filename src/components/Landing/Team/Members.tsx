@@ -44,6 +44,15 @@ export const Members = () => {
           <div className="bg-light/20 font-marcellus-sc relative z-40 mt-5 mb-4 px-2 py-2.5 text-center backdrop-blur-sm">
             <h3 className="text-2xl font-semibold">{member.name}</h3>
             <p className="text-xl">{member.style}</p>
+            <a
+              href={`https://www.instagram.com/${member.instagramUsername || "k2inked"}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Umów się do ${member.name} przez Instagram`}
+              className="link-hover mt-2 inline-block text-sm tracking-[0.15em] uppercase underline underline-offset-4 focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:outline-none"
+            >
+              Umów się
+            </a>
           </div>
         </div>
       ))}

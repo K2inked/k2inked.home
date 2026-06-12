@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { hasCookiesConsent, setCookiesConsent } from "./cookiesConsent";
+import {
+  hasCookieDecision,
+  setCookiesConsent,
+  setCookiesRejected,
+} from "./cookiesConsent";
 import { STATIC_ROUTES } from "@/routes";
 import { Button } from "../Button/Button";
 
@@ -10,11 +14,16 @@ export const CookiesBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(!hasCookiesConsent());
+    setIsVisible(!hasCookieDecision());
   }, []);
 
   const onAccept = () => {
     setCookiesConsent();
+    setIsVisible(false);
+  };
+
+  const onReject = () => {
+    setCookiesRejected();
     setIsVisible(false);
   };
 
@@ -41,6 +50,13 @@ export const CookiesBanner = () => {
             </p>
 
             <div className="tablet:flex-row flex flex-col gap-2">
+              <Button
+                ariaLabel="Odrzuć opcjonalne pliki cookies"
+                variant="lightTrans"
+                onClick={onReject}
+              >
+                Odrzuć
+              </Button>
               <Button
                 ariaLabel="Akceptuję pliki cookies"
                 variant="light"

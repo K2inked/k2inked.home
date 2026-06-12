@@ -110,7 +110,7 @@ export async function generateMetadata({
   const { artist } = await params;
 
   const member = isArtistSlug(artist) ? TEAM_BY_SLUG[artist] : undefined;
-  if (!member) return notFound();
+  if (!member) return {};
 
   const seo = member.seo ?? {};
   const isEmi = member.isPiercer ?? false;

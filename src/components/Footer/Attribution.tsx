@@ -32,7 +32,7 @@ export const Attribution = () => (
       DESIGNED &amp; PROUDLY DEVELOPED BY
       <a
         href="https://www.linkedin.com/in/agata-kuklinska"
-        rel="author noopener"
+        rel="author noopener noreferrer"
         target="_blank"
         aria-label="Agata Kuklińska — LinkedIn"
         className="link-hover"
