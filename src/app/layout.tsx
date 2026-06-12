@@ -58,21 +58,14 @@ export const metadata: Metadata = {
       "Profesjonalne studio tatuażu w sercu Warszawy. Zobacz portfolio artystek i umów wizytę.",
     siteName: "K2inked",
     locale: "pl_PL",
-    images: [
-      {
-        url: "/og/k2-og.jpg", // <-- export a 1200x630 image, add later
-        width: 1200,
-        height: 630,
-        alt: "K2inked — Studio tatuażu Warszawa",
-      },
-    ],
+    // og:image generowany dynamicznie przez src/app/opengraph-image.tsx
   },
   twitter: {
     card: "summary_large_image",
     title: "K2inked — Studio tatuażu Warszawa",
     description:
       "Profesjonalne studio tatuażu, higiena i precyzja. Zarezerwuj termin w K2inked.",
-    // images: ["/og/k2-og.jpg"], <-- to add later if needed
+    // twitter:image dziedziczony z opengraph-image.tsx
   },
   robots: {
     index: true,

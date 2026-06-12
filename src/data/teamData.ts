@@ -12,7 +12,7 @@ type BaseTeamMember = {
     title: string;
     description: string;
     keywords: string[];
-    ogImage?: string; // optional, defaults to /og/{slug}-og.jpg if not provided
+    ogImage?: string; // optional; gdy brak, generateMetadata używa zdjęcia artysty (member.imgSrc)
   };
 };
 
