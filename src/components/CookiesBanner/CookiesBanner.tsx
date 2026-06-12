@@ -42,7 +42,7 @@ export const CookiesBanner = () => {
 
             <div className="tablet:flex-row flex flex-col gap-2">
               <Button
-                ariaLabel="Przejdź do podstrony Polityka cookies"
+                ariaLabel="Akceptuję pliki cookies"
                 variant="light"
                 onClick={onAccept}
               >

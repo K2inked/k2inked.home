@@ -67,7 +67,7 @@ export const DesktopGroupNode = ({ node, pathname, renderLink }: Props) => {
       <button
         type="button"
         className="link-hover flex items-center gap-3 py-2 tracking-[0.14em] rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light/70 focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
-        aria-haspopup="menu"
+        aria-haspopup="true"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
         onKeyDown={onKeyDown}
@@ -80,7 +80,6 @@ export const DesktopGroupNode = ({ node, pathname, renderLink }: Props) => {
 
       {open && (
         <div
-          role="menu"
           className="bg-dark/95 tablet:-left-20 desktop:-left-25 desktop:w-70 tablet:w-60 absolute top-full z-50 mt-1 rounded-b-md p-4 shadow-lg ring-1 ring-white/10"
         >
           {sections.map((section, i) => (

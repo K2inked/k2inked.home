@@ -20,16 +20,11 @@ export const FooterNav = () => (
     </Link>
     <Link
       href={STATIC_ROUTES.REGULATIONS}
-      aria-label="Kliknij, by przejść do regulaminu salonu K2inked"
       className="link-hover flex flex-col "
     >
       <span>REGULAMIN I POLITYKA</span> <span> PRYWATNOŚCI</span>
     </Link>
-    <Link
-      href={STATIC_ROUTES.COOKIES_POLICY}
-      aria-label="Kliknij, by przejść do polityki cookies salonu K2inked"
-      className="link-hover "
-    >
+    <Link href={STATIC_ROUTES.COOKIES_POLICY} className="link-hover ">
       POLITYKA COOKIES
     </Link>
   </nav>

@@ -35,7 +35,7 @@ export const Hero = () => (
         </Button>
         <Button
           variant="lightTrans"
-          ariaLabel="Kliknij, by przejść do galerii prac"
+          ariaLabel="Zobacz prace — przejdź do galerii"
           as="a"
           href={STATIC_ROUTES.GALLERY}
         >

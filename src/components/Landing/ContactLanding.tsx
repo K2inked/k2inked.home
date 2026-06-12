@@ -38,7 +38,7 @@ export const ContactLanding = () => {
           </a>
           <Button
             href={path.CONTACT}
-            ariaLabel="Przejdź do formularza kontaktowego"
+            ariaLabel="Napisz do nas — formularz kontaktowy"
             variant="lightTrans"
             as="a"
             className="mt-11 text-base tablet:text-lg tablet:self-start self-center mb-11 tablet:mb-0"

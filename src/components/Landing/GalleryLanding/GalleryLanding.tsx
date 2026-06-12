@@ -23,7 +23,7 @@ export const GalleryLanding = () => {
         href={path.GALLERY}
         variant="primary"
         className="mx-auto mt-10"
-        ariaLabel="Przejdź do galerii"
+        ariaLabel="Zobacz więcej prac w galerii"
       >
         ZOBACZ WIĘCEJ
       </Button>

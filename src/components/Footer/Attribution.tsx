@@ -22,7 +22,7 @@ export const Attribution = () => (
         href="https://www.instagram.com/laczynski_ph"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Przejdź do profilu Instagram Tomasza Łączyńskiego"
+        aria-label="Tomasz Łączyński — Instagram"
         className="link-hover"
       >
         <strong>TOMASZ ŁĄCZYŃSKI</strong>.
@@ -34,7 +34,7 @@ export const Attribution = () => (
         href="https://www.linkedin.com/in/agata-kuklinska"
         rel="author noopener"
         target="_blank"
-        aria-label="Przejdź do profilu LinkedIn autorki strony"
+        aria-label="Agata Kuklińska — LinkedIn"
         className="link-hover"
       >
         {" "}
