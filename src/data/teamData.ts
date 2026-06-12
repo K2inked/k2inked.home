@@ -9,6 +9,7 @@ type BaseTeamMember = {
   gallery?: string[];
   instagramUsername?: string;
   isPiercer?: boolean; // true = piercerka (jobTitle/SEO inny niż tatuażystki)
+  faq?: { q: string; a: string }[]; // mini-FAQ na podstronie artysty (3 pytania)
   seo: {
     title: string;
     description: string;
@@ -39,6 +40,20 @@ export const TEAM = {
     ],
     gallery: buildGallery("klaudia", 18),
     instagramUsername: "klaudiasmietanka",
+    faq: [
+      {
+        q: "Czym jest fineline / single needle?",
+        a: "To bardzo cienka, precyzyjna kreska (często jedną igłą) — daje delikatny, subtelny efekt, idealny do drobnych, eleganckich wzorów.",
+      },
+      {
+        q: "Czy delikatny tatuaż fineline jest trwały?",
+        a: "Tak, przy prawidłowej pielęgnacji. Klaudia dobiera grubość kreski tak, by wzór ładnie się zestarzał.",
+      },
+      {
+        q: "Czy fineline nadaje się na pierwszy tatuaż?",
+        a: "Jak najbardziej — to świetny wybór na pierwszy, drobny tatuaż.",
+      },
+    ],
     seo: {
       title: "Klaudia — tatuaże fineline i single needle | K2inked",
       description:
@@ -60,6 +75,20 @@ export const TEAM = {
     ],
     gallery: buildGallery("kari", 30),
     instagramUsername: "karrchar",
+    faq: [
+      {
+        q: "Robisz duże projekty blackwork?",
+        a: "Tak — Kari czuje się świetnie zarówno w mocnych, czarnych kompozycjach, jak i w realistycznych portretach (również kolorowych).",
+      },
+      {
+        q: "Ile sesji zajmuje większy projekt?",
+        a: "Zależnie od wielkości i poziomu detalu — przy dużych pracach Kari rozkłada projekt na kilka spotkań. Szczegóły ustalicie przy wycenie.",
+      },
+      {
+        q: "Mogę przyjść z własną referencją do realizmu?",
+        a: "Tak — przynieś zdjęcie, Kari pomoże dobrać kompozycję.",
+      },
+    ],
     seo: {
       title: "Kari — tatuaże blackwork i realizm | K2inked",
       description:
@@ -81,6 +110,20 @@ export const TEAM = {
     ],
     gallery: buildGallery("sonia", 9),
     instagramUsername: "ink.sonique",
+    faq: [
+      {
+        q: "Co to są tatuaże ornamentowe?",
+        a: "Zdobne, dekoracyjne wzory (m.in. secesyjne, kwiatowe), które podkreślają naturalne linie ciała.",
+      },
+      {
+        q: "Gdzie najlepiej wyglądają ornamenty?",
+        a: "Sonia projektuje je tak, by „opływały” ciało — np. przedramię, kręgosłup czy mostek.",
+      },
+      {
+        q: "Robisz delikatne wzory damskie?",
+        a: "Tak, to jedna ze specjalności Soni.",
+      },
+    ],
     seo: {
       title: "Sonia — tatuaże fine line i ornamenty | K2inked",
       description:
@@ -103,6 +146,20 @@ export const TEAM = {
     ],
     gallery: buildGallery("ewelina", 11),
     instagramUsername: "limerencja.tattoo",
+    faq: [
+      {
+        q: "Czym jest dotwork?",
+        a: "Technika budowania wzoru z tysięcy drobnych kropek — daje miękki, organiczny cień bez twardych linii.",
+      },
+      {
+        q: "Czy dotwork boli bardziej?",
+        a: "Odczucia są podobne jak przy innych technikach; Ewelina pracuje spokojnie i robi przerwy.",
+      },
+      {
+        q: "Jak goją się prace dotwork?",
+        a: "Tak jak każdy tatuaż — kluczowa jest pielęgnacja przez pierwsze tygodnie.",
+      },
+    ],
     seo: {
       title: "Ewelina — tatuaże dotwork | K2inked",
       description:
@@ -124,6 +181,20 @@ export const TEAM = {
     ],
     gallery: buildGallery("mirella", 24),
     instagramUsername: "mirella.tattoo",
+    faq: [
+      {
+        q: "Co można zrobić w microrealizmie?",
+        a: "Realistyczne, drobne motywy: portrety zwierząt, rośliny, detale — z dużą dbałością o szczegół.",
+      },
+      {
+        q: "Czy microrealizm dobrze się starzeje?",
+        a: "Przy odpowiednim doborze detalu i pielęgnacji tak; Mirella dobiera poziom szczegółu pod konkretne miejsce.",
+      },
+      {
+        q: "Słyszałam, że tatuujesz bardzo delikatnie?",
+        a: "Tak — wiele osób potrafi się podczas sesji zrelaksować.",
+      },
+    ],
     seo: {
       title: "Mirella — tatuaże fine line i microrealism | K2inked",
       description:
@@ -146,6 +217,20 @@ export const TEAM = {
     gallery: buildGallery("emi", 17),
     instagramUsername: "black.peony.piercing",
     isPiercer: true,
+    faq: [
+      {
+        q: "Jakie przekłucia wykonujesz?",
+        a: "Pełen zakres przekłuć ustalisz bezpośrednio z Emi — naszą certyfikowaną piercerką — przez jej profil na Instagramie.",
+      },
+      {
+        q: "Czy piercing jest bezpieczny?",
+        a: "Tak — Emi używa sterylnych, jednorazowych narzędzi i biżuterii z bezpiecznych materiałów (m.in. tytan implantacyjny).",
+      },
+      {
+        q: "Jak dbać o świeży piercing?",
+        a: "Dostaniesz instrukcje po zabiegu; najważniejsze to nie dotykać brudnymi rękami i przemywać zgodnie z zaleceniami.",
+      },
+    ],
     seo: {
       title: "Emi — profesjonalny piercing | K2inked",
       description:
@@ -166,6 +251,20 @@ export const TEAM = {
     ],
     gallery: buildGallery("kuba", 10),
     instagramUsername: "krzywy_mir_tattoo",
+    faq: [
+      {
+        q: "Robisz napisy (lettering)?",
+        a: "Tak — gotyk, fonty germańskie i autorskie; mocny lettering to specjalność Kuby.",
+      },
+      {
+        q: "Co to są tatuaże w stylu rycin?",
+        a: "Nawiązanie do średniowiecznych grafik, łączone z nowoczesnym sznytem.",
+      },
+      {
+        q: "Lubisz duże projekty?",
+        a: "Tak — najbardziej wielkoformatowe prace dopasowane do anatomii ciała.",
+      },
+    ],
     seo: {
       title: "Kuba — tatuaż blackwork, ryciny, lettering | K2inked",
       description:
@@ -186,6 +285,20 @@ export const TEAM = {
     ],
     gallery: buildGallery("kinia", 32),
     instagramUsername: "fluffykitty.ink",
+    faq: [
+      {
+        q: "Robisz tatuaże z anime / mangi?",
+        a: "Tak — to specjalność Kini, również duże, kolorowe kompozycje.",
+      },
+      {
+        q: "Mam konkretną scenę z anime — da się ją wytatuować?",
+        a: "Najczęściej tak; przynieś referencję, Kinia podpowie jak przenieść ją na skórę.",
+      },
+      {
+        q: "Czy kolorowy tatuaż dobrze się goi?",
+        a: "Tak, przy prawidłowej pielęgnacji; Kinia powie, na co zwrócić uwagę.",
+      },
+    ],
     seo: {
       title: "Kinia — tatuaż realism / color / anime | K2inked",
       description:
@@ -202,6 +315,20 @@ export const TEAM = {
     paragraph: ["Kamila specjalizuje się w blackworku oraz formach organiczno-alienowych. Tworzy projekty inspirowane strukturami natury, mroczną estetyką i cyberowymi detalami, łącząc je z neotribalem. Jej prace są surowe, intensywne i pełne charakteru – często powstają w formie freehandu, dzięki czemu idealnie dopasowują się do ciała i jego naturalnych linii.", "Choć najlepiej czuje się w mocnych, wyrazistych kompozycjach, z przyjemnością wykonuje również delikatniejsze projekty.", "Prywatnie Kamila to kocia mama i prawdziwa artystyczna dusza – tworzy biżuterię z recyklingu i maluje obrazy."],
     gallery: buildGallery("kamila", 12),
     instagramUsername: "he.xod_ttt",
+    faq: [
+      {
+        q: "Co to jest freehand?",
+        a: "Projekt rysowany bezpośrednio na skórze, bez gotowego szablonu — idealnie dopasowany do ciała.",
+      },
+      {
+        q: "Co oznacza styl „organic / alien”?",
+        a: "Mroczne, organiczne formy inspirowane naturą i estetyką sci-fi, łączone z neotribalem.",
+      },
+      {
+        q: "Mogę dać Kamili swobodę twórczą?",
+        a: "Tak — Kamila lubi pracować z ogólną wizją i klimatem.",
+      },
+    ],
     seo: {
       title: "Kamila — tatuaż blackwork / organic / alien | K2inked",
       description:

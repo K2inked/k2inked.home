@@ -6,6 +6,7 @@ import { DividerImage } from "@/components/DividerImage/DividerImage";
 import { Team } from "@/components/Landing/Team/Team";
 import { GalleryLanding } from "@/components/Landing/GalleryLanding/GalleryLanding";
 import { Opinions } from "@/components/Landing/Opinions/Opinions";
+import { Faq } from "@/components/Landing/Faq/Faq";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <GalleryLanding />
       <DividerImage  id="divider3"/>
       <Opinions />
+      <Faq />
       <ContactLanding />
     </>
   );

@@ -6,6 +6,10 @@ export type InternalHref = StaticRoute | ArtistPath;
 export const STATIC_ROUTES = {
   HOME: "/",
   GALLERY: "/galeria",
+  FAQ: "/faq",
+  PRICING: "/cennik",
+  PIERCING: "/piercing",
+  GUIDES: "/poradniki",
   REGULATIONS: "/regulamin",
   COOKIES_POLICY: "/polityka-cookies",
   CONTACT: "/kontakt",

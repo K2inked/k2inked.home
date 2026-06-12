@@ -4,9 +4,10 @@ import { PageLayout } from "@/components/PageLayout";
 import { TEAM_BY_SLUG } from "@/data/teamData";
 import { InstagramMember } from "@/components/Socialmedia/InstagramMember";
 import { BookingButton } from "./components/BookingButton";
+import { FaqList } from "@/components/Faq/FaqList";
 import Image from "next/image";
 import { ArtistGallery } from "./components/ArtistGallery";
-import { artistPersonLd, breadcrumbLd } from "@/utils/jsonLd";
+import { artistPersonLd, breadcrumbLd, faqPageLd } from "@/utils/jsonLd";
 import { Metadata } from "next";
 
 type ArtistParams = { artist: string };
@@ -84,6 +85,18 @@ const ArtistPage = async ({ params }: ArtistPageProps) => {
           name={member.name}
         />
       </div>
+      {member.faq && member.faq.length > 0 && (
+        <section className="tablet:max-w-3xl mx-auto mb-20 w-full">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: faqPageLd(member.faq) }}
+          />
+          <h2 className="font-marcellus-sc tablet:text-3xl mb-8 text-center text-2xl tracking-[0.12em]">
+            Pytania do {member.name}
+          </h2>
+          <FaqList items={member.faq} />
+        </section>
+      )}
       <ArtistGallery images={member.gallery || []} name={member.name} />
     </PageLayout>
   );
