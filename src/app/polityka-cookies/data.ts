@@ -25,19 +25,21 @@ export const data: readonly Section[] = [
       {
         type: "p",
         text:
-          "Na stronie k2.inked pliki cookies wykorzystywane są wyłącznie w następujących celach:",
+          "Na stronie k2inked pliki cookies wykorzystywane są w następujących celach:",
       },
       {
         type: "ul",
         items: [
           "zapewnienia prawidłowego działania serwisu,",
           "zapamiętania decyzji użytkownika dotyczącej akceptacji plików cookies,",
-          "zbierania anonimowych danych statystycznych i technicznych dotyczących wydajności strony (np. czasu ładowania, rodzaju urządzenia lub przeglądarki), w celu jej optymalizacji.",
+          "zbierania anonimowych danych statystycznych i technicznych dotyczących wydajności strony (np. czasu ładowania, rodzaju urządzenia lub przeglądarki), w celu jej optymalizacji,",
+          "wyświetlania osadzonej galerii z Instagrama (po wyrażeniu zgody).",
         ],
       },
       {
         type: "p",
-        text: "Strona nie wykorzystuje cookies marketingowych ani reklamowych.",
+        text:
+          "Narzędzia analityczne oraz osadzenie Instagrama uruchamiane są wyłącznie po wyrażeniu przez Ciebie zgody. Do czasu kliknięcia „Akceptuję” strona nie ładuje tych narzędzi ani nie ustawia związanych z nimi plików cookies.",
       },
     ],
   },
@@ -59,7 +61,13 @@ export const data: readonly Section[] = [
       {
         type: "p",
         text:
-          "Strona korzysta z narzędzi analitycznych i wydajnościowych dostarczanych przez Vercel Inc. (Vercel Analytics oraz Speed Insights). Narzędzia te służą do zbierania anonimowych danych technicznych i statystycznych, takich jak liczba odwiedzin czy parametry wydajności strony. Dane te nie służą do identyfikacji użytkowników i nie są wykorzystywane w celach marketingowych.",
+          "Strona korzysta z narzędzi analitycznych i wydajnościowych dostarczanych przez Vercel Inc. (Vercel Analytics oraz Speed Insights). Narzędzia te służą do zbierania anonimowych danych technicznych i statystycznych, takich jak liczba odwiedzin czy parametry wydajności strony. Dane te nie służą do identyfikacji użytkowników i nie są wykorzystywane w celach marketingowych. Narzędzia te uruchamiają się dopiero po wyrażeniu zgody na pliki cookies.",
+      },
+      { type: "h3", text: "Cookies osadzeń zewnętrznych (Instagram / Meta)" },
+      {
+        type: "p",
+        text:
+          "Na stronie galerii oraz na stronie głównej udostępniamy osadzoną galerię z profilu Instagram (za pośrednictwem usługi LightWidget). Osadzenie to może ustawiać pliki cookies firmy Meta Platforms, Inc. Z tego powodu ładujemy je wyłącznie po wyrażeniu przez Ciebie zgody — do tego czasu w miejscu galerii wyświetlamy informację z przyciskiem akceptacji.",
       },
     ],
   },

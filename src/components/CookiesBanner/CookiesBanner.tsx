@@ -26,9 +26,11 @@ export const CookiesBanner = () => {
         <div className="border-light/10 bg-darker/80 rounded-2xl border p-4 shadow-lg backdrop-blur-md">
           <div className="tablet:flex-row tablet:items-center tablet:justify-between flex flex-col gap-8 px-3 py-3">
             <p className="text-light text-sm leading-6 font-light tracking-[0.06em]">
-              Używamy plików cookies niezbędnych do działania strony oraz do
-              zapamiętania Twoich ustawień. Klikając „Akceptuję”, potwierdzasz
-              zapoznanie się z zasadami opisanymi w{" "}
+              Używamy plików cookies niezbędnych do działania strony, a po
+              Twojej zgodzie także narzędzi analitycznych (Vercel) oraz
+              osadzonej galerii z Instagrama (może ustawiać cookies Meta).
+              Klikając „Akceptuję”, potwierdzasz zapoznanie się z zasadami
+              opisanymi w{" "}
               <Link
                 href={STATIC_ROUTES.COOKIES_POLICY}
                 className="link-hover underline underline-offset-4"
