@@ -5,10 +5,11 @@ import { guides } from "./data";
 import { breadcrumbLd } from "@/utils/jsonLd";
 
 export const metadata: Metadata = {
-  title: "Poradniki — tatuaż i pielęgnacja",
+  title: { absolute: "Poradniki — tatuaż i pielęgnacja | K2inked" },
   description:
     "Poradniki K2inked: jak dbać o tatuaż i jak przygotować się do sesji. Praktyczne wskazówki od studia tatuażu w Warszawie.",
   alternates: { canonical: "/poradniki" },
+  openGraph: { images: ["/opengraph-image"] },
 };
 
 const PoradnikiPage = () => (

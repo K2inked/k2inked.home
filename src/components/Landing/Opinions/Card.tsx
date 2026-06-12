@@ -29,7 +29,7 @@ export const Card = ({ opinion, author, rate, date, avatar }: CardProps) => {
         </div>
         <div className="inline-flex flex-col justify-center">
           <h3 className="text-md text-dark/70 font-semibold">{author}</h3>
-          <p className="text-dark/60 text-sm">
+          <p className="text-dark/70 text-sm">
             {new Date(date).toLocaleDateString("pl-PL", {
               year: "numeric",
               month: "long",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Odpowiedzi na najczęstsze pytania o tatuaż i piercing w K2inked w Warszawie — cena, ból, przygotowanie, pielęgnacja, gojenie i rezerwacja.",
   alternates: { canonical: "/faq" },
+  openGraph: { images: ["/opengraph-image"] },
 };
 
 const FaqPage = () => (

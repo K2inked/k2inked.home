@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Profesjonalny piercing w Warszawie (Śródmieście, ul. Krucza 47A). Przekłucia wykonuje certyfikowana piercerka Emi — sterylne narzędzia, bezpieczna biżuteria.",
   alternates: { canonical: "/piercing" },
+  openGraph: { images: ["/opengraph-image"] },
 };
 
 const emiIg = `https://www.instagram.com/${

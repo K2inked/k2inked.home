@@ -13,7 +13,7 @@ export const Form = () => {
     Array.isArray(state.errors) && state.errors.some((e) => e.field === field);
 
   const cls =
-    "mt-2 w-full rounded-md border border-light bg-cream p-2 text-dark font-normal";
+    "mt-2 w-full rounded-md border border-light bg-cream p-2 text-dark font-normal placeholder:text-dark/70";
 
   if (state.succeeded) {
     return (

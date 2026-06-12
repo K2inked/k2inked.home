@@ -66,7 +66,7 @@ export const DesktopGroupNode = ({ node, pathname, renderLink }: Props) => {
     >
       <button
         type="button"
-        className="link-hover flex items-center gap-3 py-2 tracking-[0.14em] focus:outline-none"
+        className="link-hover flex items-center gap-3 py-2 tracking-[0.14em] rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light/70 focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
         aria-haspopup="menu"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}

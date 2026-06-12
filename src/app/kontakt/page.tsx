@@ -37,5 +37,6 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Skontaktuj się z K2inked, profesjonalnym studiem tatuażu w Warszawie. Zarezerwuj wizytę lub zadawaj pytania.",
     alternates: { canonical: "/kontakt" },
+    openGraph: { images: ["/opengraph-image"] },
   };
 }

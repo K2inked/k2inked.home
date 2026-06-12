@@ -137,6 +137,9 @@ export default function RootLayout({
               "@id": "https://www.k2inked.pl/#studio",
               name: "K2inked",
               url: "https://www.k2inked.pl",
+              image: "https://www.k2inked.pl/opengraph-image",
+              logo: "https://www.k2inked.pl/icon-192.png",
+              areaServed: { "@type": "City", name: "Warszawa" },
               telephone: "+48 883 308 451",
               priceRange: "$$$",
               address: {
@@ -152,19 +155,21 @@ export default function RootLayout({
                 latitude: 52.2302385893085,
                 longitude: 21.016352031548752,
               },
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                ],
-                opens: "11:00",
-                closes: "17:00",
-              },
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ],
+                  opens: "11:00",
+                  closes: "17:00",
+                },
+              ],
               sameAs: [
                 "https://www.instagram.com/k2inked",
                 "https://www.facebook.com/k2.inked",

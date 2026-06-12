@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Ile kosztuje tatuaż w Warszawie? W K2inked wycena jest indywidualna i bezpłatna — sprawdź, od czego zależy cena tatuażu i jak umówić wycenę.",
   alternates: { canonical: "/cennik" },
+  openGraph: { images: ["/opengraph-image"] },
 };
 
 const CennikPage = () => (

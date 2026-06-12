@@ -15,7 +15,8 @@ export const Nav = () => {
     const active = node.isActive ? node.isActive(pathname) : pathname === node.href;
 
     const topClasses = [
-      "block py-2 tracking-[0.15em] link-hover",
+      "block py-2 tracking-[0.15em] link-hover rounded-sm",
+      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light/70 focus-visible:ring-offset-2 focus-visible:ring-offset-dark",
       active ? "font-bold" : "",
     ].join(" ");
 
