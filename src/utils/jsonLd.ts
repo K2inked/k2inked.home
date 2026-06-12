@@ -1,0 +1,63 @@
+// Helpery JSON-LD (schema.org) renderowane server-side jako surowy <script>.
+// Studio jest opisane TattooParlor w layout.tsx (@id poniżej) — tu referujemy.
+
+const SITE = "https://www.k2inked.pl";
+const STUDIO_ID = `${SITE}/#studio`;
+
+type PersonArgs = {
+  name: string;
+  slug: string;
+  isPiercer: boolean;
+  instagramUsername?: string;
+  imgSrc: string;
+};
+
+/** Person schema dla podstrony artysty/piercerki, powiązany ze studiem (worksFor). */
+export const artistPersonLd = ({
+  name,
+  slug,
+  isPiercer,
+  instagramUsername,
+  imgSrc,
+}: PersonArgs): string =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name,
+    jobTitle: isPiercer ? "Piercerka" : "Tatuażystka",
+    url: `${SITE}/${slug}`,
+    image: `${SITE}${imgSrc}`,
+    worksFor: { "@type": "TattooParlor", "@id": STUDIO_ID, name: "K2inked" },
+    ...(instagramUsername
+      ? { sameAs: [`https://www.instagram.com/${instagramUsername}`] }
+      : {}),
+  });
+
+type Crumb = { name: string; path: string };
+
+/** BreadcrumbList — np. Strona główna → {Imię}. path względny ("/" lub "/klaudia"). */
+export const breadcrumbLd = (crumbs: Crumb[]): string =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: `${SITE}${c.path === "/" ? "" : c.path}/`.replace(/\/+$/, "/"),
+    })),
+  });
+
+type FaqItem = { q: string; a: string };
+
+/** FAQPage schema z listy pytań/odpowiedzi (dla /faq i mini-FAQ artystów). */
+export const faqPageLd = (items: FaqItem[]): string =>
+  JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((it) => ({
+      "@type": "Question",
+      name: it.q,
+      acceptedAnswer: { "@type": "Answer", text: it.a },
+    })),
+  });

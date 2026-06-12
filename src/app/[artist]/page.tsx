@@ -5,6 +5,7 @@ import { TEAM_BY_SLUG, TEAM } from "@/data/teamData";
 import { InstagramMember } from "@/components/Socialmedia/InstagramMember";
 import Image from "next/image";
 import { ArtistGallery } from "./components/ArtistGallery";
+import { artistPersonLd, breadcrumbLd } from "@/utils/jsonLd";
 import { Metadata } from "next";
 
 type ArtistParams = { artist: string };
@@ -22,9 +23,7 @@ const ArtistPage = async ({ params }: ArtistPageProps) => {
   const member = TEAM_BY_SLUG[artist];
   if (!member) notFound();
 
-  if (!member) {
-    notFound();
-  }
+  const isPiercer = member.name.toLowerCase() === "emi";
 
   return (
     <PageLayout
@@ -32,6 +31,27 @@ const ArtistPage = async ({ params }: ArtistPageProps) => {
       headingName={member.name}
       tabDeskClassName="w-140"
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: artistPersonLd({
+            name: member.name,
+            slug: artist,
+            isPiercer,
+            instagramUsername: member.instagramUsername,
+            imgSrc: member.imgSrc,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: breadcrumbLd([
+            { name: "Strona główna", path: "/" },
+            { name: member.name, path: `/${artist}` },
+          ]),
+        }}
+      />
       <section className="tablet:flex-row tablet:items-start tablet:gap-30 mb-20 flex flex-col items-center gap-6">
         <div className="tablet:h-125 tablet:w-95 tablet:mb-0 relative mb-9 h-90 w-70 overflow-hidden rounded-3xl drop-shadow-lg/30">
           <Image
