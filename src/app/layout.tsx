@@ -144,7 +144,7 @@ export default function RootLayout({
                 "@type": "PostalAddress",
                 streetAddress: "Krucza 47A",
                 addressLocality: "Warszawa",
-                addressRegion: "Śródmieście",
+                addressRegion: "mazowieckie",
                 postalCode: "00-509",
                 addressCountry: "PL",
               },
