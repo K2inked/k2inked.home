@@ -1,5 +1,13 @@
 import { PageLayout } from "@/components/PageLayout";
 import { InstagramEmbed } from "@/components/Instagram/InstagramEmbed";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Galeria prac",
+  description:
+    "Zobacz galerię tatuaży i piercingu studia K2inked w Warszawie — prace naszych artystek w stylach fineline, blackwork, dotwork, microrealizm i więcej.",
+  alternates: { canonical: "/galeria" },
+};
 
 const GalleryPage = () => {
   return <PageLayout variant="light" headingName="Galeria" isMainHeading tabDeskClassName="w-140">

@@ -1,7 +1,15 @@
 import { data as COOKIES_POLICY } from "./data";
 import { PageLayout } from "@/components/PageLayout";
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import type { Section, Block } from "./data";
+
+export const metadata: Metadata = {
+  title: "Polityka cookies",
+  description:
+    "Polityka plików cookies studia K2inked — jakich narzędzi używamy (analityka Vercel, osadzenie Instagrama) i jak zarządzać zgodą.",
+  alternates: { canonical: "/polityka-cookies" },
+};
 
 
 

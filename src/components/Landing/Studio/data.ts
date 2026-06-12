@@ -1,4 +1,5 @@
 export const studioData = [
+  "K2inked to studio tatuażu i piercingu w sercu Warszawy — przy ulicy Kruczej 47A na Śródmieściu. Tworzymy tatuaże w stylach fineline, blackwork, dotwork, microrealizm i anime, a nasza certyfikowana piercerka zadba o Twój piercing. Domowa atmosfera w profesjonalnych warunkach — wpadnij z gotowym projektem albo tylko pomysłem. Otwarte pon–sob, 11:00–17:00.",
   "Jesteśmy studiem założonym przez dwie tatuatorki z wieloletnim doświadczeniem. Dogłębna wiedza o naszej branży sprawia, że łączymy profesjonalizm z klimatem, który przenosi Cię w nasz artystyczny świat.",
   "Skład naszego studia tworzą artyści o różnych specjalizacjach i unikalnym stylu – dzięki temu każdy znajdzie tu coś dla siebie, od delikatnych, minimalistycznych wzorów po pełne detali, mocnej czerni, odważne kompozycje.",
   "Wykonasz u nas rownież piercing, który podkreśli Twój charakter i dopełni wyjątkowy wizerunek.",

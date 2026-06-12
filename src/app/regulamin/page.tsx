@@ -1,7 +1,15 @@
 import { REGULATIONS } from "./data";
 import { PageLayout } from "@/components/PageLayout";
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import type { Inline, Block, Section, ListItem } from "./data";
+
+export const metadata: Metadata = {
+  title: "Regulamin",
+  description:
+    "Regulamin studia tatuażu i piercingu K2inked w Warszawie — zasady wykonywania tatuaży i przekłuć oraz polityka prywatności.",
+  alternates: { canonical: "/regulamin" },
+};
 
 const renderContent = (content: Inline[]): ReactNode[] =>
   content.map((c, i) => {

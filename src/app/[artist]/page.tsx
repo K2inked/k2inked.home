@@ -3,6 +3,7 @@ import { isArtistSlug, RESERVED_SLUGS, ARTIST_SLUGS } from "@/routes";
 import { PageLayout } from "@/components/PageLayout";
 import { TEAM_BY_SLUG } from "@/data/teamData";
 import { InstagramMember } from "@/components/Socialmedia/InstagramMember";
+import { BookingButton } from "./components/BookingButton";
 import Image from "next/image";
 import { ArtistGallery } from "./components/ArtistGallery";
 import { artistPersonLd, breadcrumbLd } from "@/utils/jsonLd";
@@ -77,6 +78,12 @@ const ArtistPage = async ({ params }: ArtistPageProps) => {
           </article>
         </div>
       </section>
+      <div className="mb-20 flex justify-center">
+        <BookingButton
+          href={`https://www.instagram.com/${member.instagramUsername || "k2inked"}`}
+          name={member.name}
+        />
+      </div>
       <ArtistGallery images={member.gallery || []} name={member.name} />
     </PageLayout>
   );
@@ -114,7 +121,7 @@ export async function generateMetadata({
       : ["tatuaż Warszawa", "studio tatuażu", member.name]);
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords,
     alternates: { canonical: `/${artist}` },

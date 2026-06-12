@@ -5,6 +5,7 @@ import { BackgroundImage } from "./BackgroundImage";
 import { Heading } from "../Heading";
 import { Button } from "../Button/Button";
 import { STATIC_ROUTES } from "@/routes";
+import { K2INKED_DATA } from "@/data/k2Data";
 
 export const Hero = () => (
   <BackgroundImage
@@ -15,19 +16,22 @@ export const Hero = () => (
     <section className="flex min-h-[100svh] tablet:pt-40 tablet:pb-25 w-full flex-col items-center justify-center px-[10vw]">
       <LogoK2Inked className="text-light desktop:h-[600px] tablet:max-w-[500px] h-[50vh]" />
       <Heading tag="h1" variant="light">
-        K2.inked
+        K2inked
       </Heading>
-      <Heading tag="h3" variant="light" className="text-center desktop:!text-4xl desktop:py-6">
-        Studio w sercu Warszawy
+      <Heading tag="h3" as="h2" variant="light" className="text-center desktop:!text-4xl desktop:pt-6">
+        Studio tatuażu Warszawa
       </Heading>
+      <p className="text-light font-marcellus-sc text-[3.5vw] tablet:text-base desktop:text-lg mt-2 tracking-[0.2em] opacity-80">
+        Śródmieście · Krucza 47A
+      </p>
       <div className="tablet:gap-45 tablet:py-18 flex flex-row gap-[20vw] py-13.5">
         <Button
           variant="light"
-          ariaLabel="Kliknij, by przejść do strony z formularzem kontaktowym"
+          ariaLabel="Umów wizytę przez Instagram K2inked"
           as="a"
-          href={STATIC_ROUTES.CONTACT}
+          href={K2INKED_DATA.socialMedia.instagram}
         >
-          Umów się
+          Umów wizytę
         </Button>
         <Button
           variant="lightTrans"

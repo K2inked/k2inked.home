@@ -13,3 +13,12 @@ export const setCookiesConsent = (): void => {
   window.localStorage.setItem(COOKIES_CONSENT_KEY, "true");
   window.dispatchEvent(new Event(CONSENT_EVENT));
 };
+
+// Cofnięcie zgody (RODO art. 7 ust. 3 — równie łatwe jak udzielenie).
+// Reload zapewnia odładowanie skryptów third-party już wstrzykniętych.
+export const clearCookiesConsent = (): void => {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(COOKIES_CONSENT_KEY);
+  window.dispatchEvent(new Event(CONSENT_EVENT));
+  window.location.reload();
+};

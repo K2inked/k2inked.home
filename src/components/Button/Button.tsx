@@ -53,6 +53,7 @@ export const Button = (props: ButtonProps) => {
         href.startsWith("tel:"));
 
     if (isExternal) {
+      const isHttp = href.startsWith("http");
       return (
         <a
           href={href}
@@ -61,6 +62,9 @@ export const Button = (props: ButtonProps) => {
           aria-disabled={disabled}
           data-disabled={disabled}
           aria-label={ariaLabel}
+          {...(isHttp
+            ? { target: "_blank", rel: "noopener noreferrer" }
+            : {})}
           {...anchorProps}
         >
           {content}
