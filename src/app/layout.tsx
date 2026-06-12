@@ -2,8 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { cn } from "@/utils";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ConsentScripts } from "@/components/Consent/ConsentScripts";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import { CookiesBanner } from "@/components/CookiesBanner/CookiesBanner";
@@ -120,8 +119,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <CookiesBanner />
         <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <ConsentScripts />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
