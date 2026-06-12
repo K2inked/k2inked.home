@@ -75,6 +75,7 @@ const Regulations = () => {
     <PageLayout
       variant="dark"
       headingName="Regulamin"
+      isMainHeading
       tabDeskClassName="tablet:w-150 desktop:w-150"
     >
       <article className="text-base leading-7.5 font-light tracking-[0.12em]">

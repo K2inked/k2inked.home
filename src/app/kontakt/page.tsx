@@ -9,6 +9,7 @@ const ContactPage = () => {
     <PageLayout
       variant="dark"
       headingName="Napisz do nas"
+      isMainHeading
       tabDeskClassName="tablet:w-180 desktop:w-180"
     >
       <article className="tablet:text-lg mb-25 text-base leading-7.5 font-light tracking-[0.12em]">

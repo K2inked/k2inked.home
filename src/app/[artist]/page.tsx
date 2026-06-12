@@ -29,6 +29,7 @@ const ArtistPage = async ({ params }: ArtistPageProps) => {
     <PageLayout
       variant="light"
       headingName={member.name}
+      isMainHeading
       tabDeskClassName="w-140"
     >
       <script

@@ -8,6 +8,7 @@ const NotFound = () => {
     <PageLayout
       variant="dark"
       headingName="404"
+      isMainHeading
       tabDeskClassName="tablet:w-110 desktop:w-110"
     >
       <div className="drop-shadow-lg/40 bg-secondary tablet:mb-80 mb-24.5 flex h-fit w-[90vw] desktop:w-[1000px] flex-col tablet:leading-10 tablet:text-2xl items-center rounded-tr-3xl rounded-bl-3xl p-6.5 py-11 tablet:py-22.5 text-center leading-8 tracking-widest">

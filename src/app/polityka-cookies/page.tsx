@@ -45,6 +45,7 @@ const CookiesPolicyPage = () => {
     <PageLayout
       variant="dark"
       headingName="Polityka cookies"
+      isMainHeading
       tabDeskClassName="tablet:w-170 desktop:w-190"
     >
       <article className="text-base leading-7.5 font-light tracking-[0.12em]">

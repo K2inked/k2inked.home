@@ -115,8 +115,16 @@ export default function RootLayout({
           "font-inconsolata text-dark flex min-h-screen flex-col antialiased",
         )}
       >
+        <a
+          href="#main"
+          className="bg-dark text-light focus:ring-light/60 sr-only z-[100] rounded-md px-4 py-2 text-sm tracking-[0.06em] focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:ring-2 focus:outline-none"
+        >
+          Przejdź do treści
+        </a>
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main id="main" className="flex-grow">
+          {children}
+        </main>
         <CookiesBanner />
         <Footer />
         <ConsentScripts />

@@ -2,7 +2,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { InstagramEmbed } from "@/components/Instagram/InstagramEmbed";
 
 const GalleryPage = () => {
-  return <PageLayout variant="light" headingName="Galeria" tabDeskClassName="w-140">
+  return <PageLayout variant="light" headingName="Galeria" isMainHeading tabDeskClassName="w-140">
     <div className="w-full">
       <InstagramEmbed
         src="https://cdn.lightwidget.com/widgets/3ce1714c155e523791f22874b46963e4.html"
