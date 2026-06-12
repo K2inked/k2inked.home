@@ -17,8 +17,9 @@ export const BackgroundImage = ({
     <Image
       src={src}
       alt={alt}
-      quality={100}
+      quality={75}
       fill
+      sizes="100vw"
       className={cn("object-cover", className)}
       {...props}
     />

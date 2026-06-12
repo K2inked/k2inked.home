@@ -80,7 +80,10 @@ export const metadata: Metadata = {
   },
   category: "beauty",
   verification: {
-    google: "xq3Wv62gjYFY8V6_Dvz8Wy5zGMtaLquZ8y7hm2tdsoI",
+    google: [
+      "xq3Wv62gjYFY8V6_Dvz8Wy5zGMtaLquZ8y7hm2tdsoI",
+      "R2II42_bl2I1SbaOfhQx7qbPGc--e0ERRsUl6iHFU8c",
+    ],
   },
   icons: {
     icon: [
