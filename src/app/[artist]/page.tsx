@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { isArtistSlug, RESERVED_SLUGS, ARTIST_SLUGS } from "@/routes";
 import { PageLayout } from "@/components/PageLayout";
-import { TEAM_BY_SLUG, TEAM } from "@/data/teamData";
+import { TEAM_BY_SLUG } from "@/data/teamData";
 import { InstagramMember } from "@/components/Socialmedia/InstagramMember";
 import Image from "next/image";
 import { ArtistGallery } from "./components/ArtistGallery";
@@ -23,7 +23,7 @@ const ArtistPage = async ({ params }: ArtistPageProps) => {
   const member = TEAM_BY_SLUG[artist];
   if (!member) notFound();
 
-  const isPiercer = member.name.toLowerCase() === "emi";
+  const isPiercer = member.isPiercer ?? false;
 
   return (
     <PageLayout
@@ -88,11 +88,11 @@ export async function generateMetadata({
 }: ArtistPageProps): Promise<Metadata> {
   const { artist } = await params;
 
-  const member = TEAM[artist as keyof typeof TEAM];
+  const member = isArtistSlug(artist) ? TEAM_BY_SLUG[artist] : undefined;
   if (!member) return notFound();
 
   const seo = member.seo ?? {};
-  const isEmi = member.name.toLowerCase() === "emi";
+  const isEmi = member.isPiercer ?? false;
 
   const title =
     seo.title ??
@@ -112,8 +112,6 @@ export async function generateMetadata({
       ? ["piercing Warszawa", "studio piercingu", "przekłucia", "Emi K2"]
       : ["tatuaż Warszawa", "studio tatuażu", member.name]);
 
-  const ogImage = seo.ogImage ?? member.imgSrc;
-
   return {
     title,
     description,
@@ -123,13 +121,13 @@ export async function generateMetadata({
       title,
       description,
       url: `https://www.k2inked.pl/${artist}`,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: member.name }],
+      // og:image generowany dynamicznie przez [artist]/opengraph-image.tsx
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      // twitter:image dziedziczony z opengraph-image.tsx
     },
   };
 }

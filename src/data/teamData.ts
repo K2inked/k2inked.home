@@ -8,6 +8,7 @@ type BaseTeamMember = {
   paragraph: string[];
   gallery?: string[];
   instagramUsername?: string;
+  isPiercer?: boolean; // true = piercerka (jobTitle/SEO inny niż tatuażystki)
   seo: {
     title: string;
     description: string;
@@ -144,12 +145,12 @@ export const TEAM = {
     ],
     gallery: buildGallery("emi", 17),
     instagramUsername: "black.peony.piercing",
+    isPiercer: true,
     seo: {
       title: "Emi — profesjonalny piercing | K2inked",
       description:
         "Emi z K2inked w Warszawie specjalizuje się w profesjonalnym piercingu. Zobacz jej portfolio i umów wizytę.",
       keywords: ["piercing Warszawa", "professional piercing", "Emi K2"],
-      ogImage: "/og/emi-og.jpg",
     },
   },
   kuba: {
