@@ -135,6 +135,22 @@ export const guides: Guide[] = [
           ".",
         ],
       },
+      {
+        type: "links",
+        title: "Zobacz też",
+        items: [
+          {
+            label: "Jak przygotować się do tatuażu",
+            href: "/poradniki/jak-przygotowac-sie-do-tatuazu",
+          },
+          { label: "Czy tatuaż boli?", href: "/poradniki/czy-tatuaz-boli" },
+          {
+            label: "Ile kosztuje tatuaż w Warszawie",
+            href: "/poradniki/ile-kosztuje-tatuaz-warszawa",
+          },
+          { label: "Częste pytania", href: "/faq" },
+        ],
+      },
     ],
   },
   {
@@ -249,6 +265,22 @@ export const guides: Guide[] = [
             href: "/poradniki/jak-dbac-o-tatuaz",
           },
           " — od niej zależy efekt końcowy.",
+        ],
+      },
+      {
+        type: "links",
+        title: "Zobacz też",
+        items: [
+          { label: "Czy tatuaż boli?", href: "/poradniki/czy-tatuaz-boli" },
+          {
+            label: "Ile kosztuje tatuaż w Warszawie",
+            href: "/poradniki/ile-kosztuje-tatuaz-warszawa",
+          },
+          {
+            label: "Jak dbać o tatuaż — pielęgnacja krok po kroku",
+            href: "/poradniki/jak-dbac-o-tatuaz",
+          },
+          { label: "Częste pytania", href: "/faq" },
         ],
       },
     ],
@@ -392,6 +424,19 @@ export const guides: Guide[] = [
           ".",
         ],
       },
+      {
+        type: "links",
+        title: "Zobacz też",
+        items: [
+          { label: "Cennik i model wyceny", href: "/cennik" },
+          {
+            label: "Jak przygotować się do tatuażu",
+            href: "/poradniki/jak-przygotowac-sie-do-tatuazu",
+          },
+          { label: "Czy tatuaż boli?", href: "/poradniki/czy-tatuaz-boli" },
+          { label: "Galeria prac", href: "/galeria" },
+        ],
+      },
     ],
   },
   {
@@ -522,6 +567,25 @@ export const guides: Guide[] = [
             href: "/poradniki/jak-dbac-o-tatuaz",
           },
           ", bo to od niej zależy efekt końcowy.",
+        ],
+      },
+      {
+        type: "links",
+        title: "Zobacz też",
+        items: [
+          {
+            label: "Jak przygotować się do tatuażu",
+            href: "/poradniki/jak-przygotowac-sie-do-tatuazu",
+          },
+          {
+            label: "Jak dbać o tatuaż — pielęgnacja krok po kroku",
+            href: "/poradniki/jak-dbac-o-tatuaz",
+          },
+          {
+            label: "Ile kosztuje tatuaż w Warszawie",
+            href: "/poradniki/ile-kosztuje-tatuaz-warszawa",
+          },
+          { label: "Częste pytania", href: "/faq" },
         ],
       },
     ],

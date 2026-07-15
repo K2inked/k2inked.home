@@ -21,7 +21,23 @@ export const piercingData: ProseBlock[] = [
   { type: "h2", text: "Jak wygląda wizyta" },
   {
     type: "p",
-    text: "Najpierw rozmowa i dobór biżuterii, potem dezynfekcja, oznaczenie miejsca i samo przekłucie. Na koniec dostajesz jasne instrukcje pielęgnacyjne, dzięki którym przekłucie ładnie się goi.",
+    text: [
+      "Najpierw rozmowa i dobór biżuterii, potem dezynfekcja, oznaczenie miejsca i samo przekłucie. Na koniec dostajesz jasne instrukcje pielęgnacyjne, dzięki którym przekłucie ładnie się goi. Emi ustali z Tobą szczegóły — a jeśli myślisz też o tatuażu, ",
+      { text: "napisz do nas", href: "/kontakt" },
+      ".",
+    ],
+  },
+  {
+    type: "links",
+    title: "Zobacz też",
+    items: [
+      {
+        label: "Jak dbać o tatuaż — pielęgnacja krok po kroku",
+        href: "/poradniki/jak-dbac-o-tatuaz",
+      },
+      { label: "Cennik i model wyceny", href: "/cennik" },
+      { label: "Wszystkie poradniki", href: "/poradniki" },
+    ],
   },
 ];
 
