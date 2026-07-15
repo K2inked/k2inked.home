@@ -22,6 +22,7 @@ export const STATIC_ROUTES = {
 export const GUIDE_SLUGS = [
   "jak-dbac-o-tatuaz",
   "jak-przygotowac-sie-do-tatuazu",
+  "ile-kosztuje-tatuaz-warszawa",
 ] as const;
 
 export const ARTIST_SLUGS = [

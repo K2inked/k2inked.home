@@ -253,6 +253,147 @@ export const guides: Guide[] = [
       },
     ],
   },
+  // TODO MSTUDIO: gdy klient poda widełki „od–do" (choćby minimum sesji lub
+  // stawkę godzinową) — dosypać je w sekcjach „Ile kosztuje mały tatuaż",
+  // „Cena za sesję czy za projekt" oraz na /cennik. Bez nich artykuł i tak
+  // rankuje (konkurenci też mówią „wycena indywidualna"), ale z nimi będzie
+  // znacznie mocniejszy. NIE zmyślać kwot.
+  {
+    slug: "ile-kosztuje-tatuaz-warszawa",
+    heading: "Ile kosztuje tatuaż w Warszawie",
+    metaTitle: "Ile kosztuje tatuaż w Warszawie? Od czego zależy cena | K2inked",
+    description:
+      "Ile kosztuje tatuaż w Warszawie? Wyjaśniamy, od czego zależy cena: rozmiar, miejsce na ciele, styl, czas pracy i liczba sesji — oraz jak wygląda bezpłatna wycena w K2inked.",
+    excerpt:
+      "Od czego naprawdę zależy cena tatuażu, czym różni się wycena małego wzoru od dużego projektu i dlaczego najtańsza oferta bywa najdroższa.",
+    datePublished: "2026-07-15",
+    blocks: [
+      {
+        type: "lead",
+        text: "Ile kosztuje tatuaż w Warszawie? Uczciwa odpowiedź brzmi: to zależy — i zaraz dokładnie wyjaśnimy, od czego. Nie ma jednej ceny tatuażu, bo nie ma jednego tatuażu: mały napis na przedramieniu i rozbudowany rękaw to dwie zupełnie różne prace. Cenę kształtuje przede wszystkim czas pracy artystki, a na niego wpływają rozmiar, miejsce na ciele, styl, poziom szczegółowości i to, czy projekt powstaje od zera.",
+      },
+      {
+        type: "p",
+        text: [
+          "Poniżej rozkładamy wycenę na czynniki pierwsze, żebyś wiedziała lub wiedział, za co dokładnie płacisz i czego się spodziewać. A jeśli wolisz konkret dla swojego pomysłu — ",
+          { text: "napisz do nas", href: "/kontakt" },
+          ", wycena jest bezpłatna i niewiążąca.",
+        ],
+      },
+      { type: "h2", text: "Dlaczego studia nie podają sztywnego cennika" },
+      {
+        type: "p",
+        text: "Sztywna tabela z cenami wyglądałaby uczciwie, ale w praktyce wprowadzałaby w błąd. Ten sam wzór na przedramieniu i na żebrach to inny czas pracy. Ten sam rozmiar w delikatnym fineline i w gęsto wypełnionym blackworku to inny nakład. Dlatego poważne studia — również te największe w Warszawie — wyceniają indywidualnie. To nie jest wykręt, tylko jedyny sposób, żeby cena odpowiadała realnej pracy.",
+      },
+      { type: "h2", text: "Od czego zależy cena tatuażu" },
+      { type: "h3", text: "Rozmiar" },
+      {
+        type: "p",
+        text: "Najbardziej oczywisty czynnik, ale nie działa liniowo. Tatuaż dwa razy większy nie kosztuje dokładnie dwa razy więcej — większa powierzchnia to nie tylko więcej pracy, ale też więcej detalu, cieniowania i często dodatkowa sesja.",
+      },
+      { type: "h3", text: "Umiejscowienie na ciele" },
+      {
+        type: "p",
+        text: "Miejsce potrafi zmienić wycenę bardziej, niż się wydaje. Płaskie, łatwo dostępne powierzchnie jak przedramię czy łydka pracuje się szybciej. Miejsca krzywe, ruchome lub wrażliwe — żebra, stopa, dłoń, kark, wewnętrzna strona ramienia — wymagają wolniejszej pracy, częstszych przerw i większej precyzji. Skóra w każdym z tych miejsc inaczej przyjmuje pigment.",
+      },
+      { type: "h3", text: "Styl i poziom szczegółowości" },
+      {
+        type: "p",
+        text: [
+          "Minimalistyczny fineline, mocny blackwork, realizm, kolor — każdy styl to inny nakład czasu przy tej samej powierzchni. Drobne, gęste detale i płynne przejścia tonalne kosztują więcej czasu niż prosta, czysta kreska. Najlepiej zobaczyć to na pracach — zajrzyj do ",
+          { text: "naszej galerii", href: "/galeria" },
+          " i porównaj projekty, które Ci się podobają.",
+        ],
+      },
+      { type: "h3", text: "Autorskość projektu" },
+      {
+        type: "p",
+        text: "Projekt tworzony od zera pod Ciebie to praca, która dzieje się jeszcze zanim usiądziesz na fotelu: rozmowa, szkice, poprawki. Gotowy wzór do odwzorowania wymaga jej mniej. Dlatego custom wyceniamy inaczej niż realizację istniejącego projektu.",
+      },
+      { type: "h3", text: "Czas pracy i liczba sesji" },
+      {
+        type: "p",
+        text: "Ostatecznie wszystkie powyższe czynniki sprowadzają się do jednego: ile godzin zajmie ta praca. Duże projekty rozkładamy na kilka sesji — nie dlatego, żeby podbić cenę, tylko dlatego, że skóra ma swoją granicę wytrzymałości, a po jej przekroczeniu efekt jest gorszy.",
+      },
+      { type: "h2", text: "Ile kosztuje mały tatuaż" },
+      {
+        type: "p",
+        text: "Małe wzory — napis, symbol, drobny motyw do kilku centymetrów — są najtańszą opcją, ale i tu jest haczyk: bardzo mały tatuaż z dużą liczbą detali potrafi kosztować więcej niż większy, ale prosty. Miniaturowe elementy wymagają precyzji, a linie muszą mieć zapas na to, że z upływem lat delikatnie się rozejdą. Dlatego przy małych projektach artystka czasem zaproponuje nieco większy rozmiar — nie dla ceny, tylko po to, żeby tatuaż wyglądał dobrze również za dziesięć lat.",
+      },
+      {
+        type: "p",
+        text: "Warto też wiedzieć, że wiele studiów ma minimalną stawkę za sesję. Przygotowanie stanowiska, sterylne igły i jednorazowe materiały kosztują tyle samo przy małym i przy dużym wzorze.",
+      },
+      { type: "h2", text: "Ile kosztuje tatuaż na ręce" },
+      {
+        type: "p",
+        text: "„Ręka” to bardzo pojemne słowo i dobrze pokazuje, dlaczego wycena jest indywidualna. Przedramię to jedno z najwygodniejszych miejsc do tatuowania — płaskie, łatwo dostępne, u większości osób łatwiejsze do przesiedzenia. Ramię daje dużo miejsca na rozbudowany projekt. Ale już dłoń, nadgarstek czy wewnętrzna strona ramienia to zupełnie inna historia: trudniejsza praca, wrażliwsza skóra, a w przypadku dłoni również gorsze utrzymywanie pigmentu, co często oznacza konieczność poprawek. Ta sama „ręka”, trzy różne wyceny.",
+      },
+      { type: "h2", text: "Cena za sesję czy za cały projekt" },
+      {
+        type: "p",
+        text: "Spotkasz oba modele. Mniejsze i średnie tatuaże zwykle wycenia się jako całość — wiesz z góry, ile zapłacisz. Przy dużych, wielosesyjnych projektach naturalniejsze jest rozliczenie za sesję, bo trudno przewidzieć co do godziny, ile zajmie cały rękaw.",
+      },
+      {
+        type: "p",
+        text: "Niezależnie od modelu zasada jest ta sama: ustal to na etapie wyceny, zanim usiądziesz na fotelu. Dobre studio powie Ci wprost, w którym modelu pracuje i co obejmuje kwota — łącznie z tym, czy w cenie jest ewentualna poprawka po wygojeniu.",
+      },
+      { type: "h2", text: "Dlaczego najtańsza oferta bywa najdroższa" },
+      {
+        type: "p",
+        text: "Tatuaż to jedna z niewielu rzeczy, które kupujesz dosłownie na całe życie. Przy wyborze wyłącznie po cenie ryzykujesz, że zapłacisz dwa razy: raz za tatuaż, drugi raz za jego poprawianie, przykrywanie albo usuwanie laserem — a to jest droższe, dłuższe i bardziej bolesne niż zrobienie go dobrze za pierwszym razem.",
+      },
+      {
+        type: "p",
+        text: "Nie chodzi o to, żeby przepłacać. Chodzi o to, żeby wiedzieć, za co płacisz: doświadczenie artystki, sterylne jednorazowe igły, certyfikowane farby, higienę stanowiska i czas poświęcony na projekt. Na tym się nie oszczędza.",
+      },
+      { type: "h2", text: "Co powinno wchodzić w cenę" },
+      {
+        type: "p",
+        text: "Porównując oferty, nie patrz wyłącznie na kwotę — sprawdź, co ona obejmuje. W K2inked w cenie tatuażu dostajesz indywidualny projekt przygotowany pod Ciebie, sterylne i jednorazowe igły, certyfikowane farby oraz jasne instrukcje pielęgnacji po sesji. To są rzeczy, które powinny być standardem wszędzie, a bywają pozycją, na której najłatwiej zaoszczędzić kosztem klienta.",
+      },
+      {
+        type: "p",
+        text: "Jeśli oferta jest wyraźnie tańsza niż wszystkie inne, warto zapytać dlaczego. Czasem odpowiedź jest w porządku — na przykład artystka dopiero buduje portfolio. A czasem oszczędność siedzi w materiałach albo w czasie poświęconym na projekt, i to Ty zapłacisz za nią później.",
+      },
+      { type: "h2", text: "Jak przygotować budżet" },
+      {
+        type: "ul",
+        items: [
+          "Ustal wycenę przed sesją, nie w jej trakcie — unikniesz niespodzianek.",
+          "Zapytaj wprost, czy kwota obejmuje projekt i ewentualną poprawkę po wygojeniu.",
+          "Przy dużym projekcie zapytaj o orientacyjną liczbę sesji i odstępy między nimi — rozłożysz koszt w czasie.",
+          "Doliczy zadatek, jeśli studio go pobiera — zwykle wchodzi w cenę tatuażu.",
+          "Nie tnij projektu tylko po to, żeby zmieścić się w kwocie. Lepiej poczekać miesiąc i zrobić rzecz, której nie będziesz poprawiać.",
+        ],
+      },
+      { type: "h2", text: "Jak wygląda wycena w K2inked" },
+      {
+        type: "p",
+        text: [
+          "Napisz do nas albo bezpośrednio do wybranej artystki na Instagramie i opisz pomysł: co chcesz zrobić, w jakim miejscu na ciele i mniej więcej w jakim rozmiarze. Dorzuć referencje — zdjęcia, szkice, cokolwiek, co pokazuje kierunek. Im więcej materiału, tym trafniejsza wycena. Szczegóły modelu wyceny opisaliśmy też na stronie ",
+          { text: "cennika", href: "/cennik" },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: [
+          "Wycena jest bezpłatna i niewiążąca — możesz zapytać, przemyśleć i wrócić za miesiąc. Gdy termin będzie ustalony, przyda się poradnik o tym, ",
+          {
+            text: "jak przygotować się do tatuażu",
+            href: "/poradniki/jak-przygotowac-sie-do-tatuazu",
+          },
+          ", a po sesji — ",
+          {
+            text: "jak dbać o tatuaż",
+            href: "/poradniki/jak-dbac-o-tatuaz",
+          },
+          ".",
+        ],
+      },
+    ],
+  },
 ];
 
 export const getGuide = (slug: string): Guide | undefined =>
