@@ -27,31 +27,113 @@ export const guides: Guide[] = [
     blocks: [
       {
         type: "lead",
-        text: "Dobra pielęgnacja tatuażu to podstawa — od niej zależy, jak Twój tatuaż będzie wyglądał za rok i za dziesięć lat. Poniżej krok po kroku, jak dbać o świeży tatuaż w pierwszych dniach i tygodniach.",
-      },
-      { type: "h2", text: "Pierwsze godziny" },
-      {
-        type: "p",
-        text: "Pierwszy opatrunek zostaw zgodnie z instrukcją, którą dostaniesz od artystki po sesji. Po jego zdjęciu delikatnie umyj tatuaż letnią wodą z mydłem o neutralnym pH i osusz czystym ręcznikiem papierowym (nie pocieraj).",
-      },
-      { type: "h2", text: "Pierwsze 2 tygodnie" },
-      {
-        type: "p",
-        text: "Myj tatuaż 1–2 razy dziennie i nakładaj cienką warstwę kremu poleconego przez artystkę. Nie zdrapuj strupków i nie drap — to może uszkodzić wzór. Unikaj basenu, sauny, jeziora i długiej kąpieli przez ~2 tygodnie.",
-      },
-      { type: "h2", text: "Gojenie — czego się spodziewać" },
-      {
-        type: "p",
-        text: "Wierzchnia warstwa skóry goi się zwykle 2 tygodnie, a pełne wygojenie głębszych warstw trwa do 2–3 miesięcy. Lekkie łuszczenie i swędzenie to normalny etap.",
-      },
-      { type: "h2", text: "Czego unikać" },
-      {
-        type: "p",
-        text: "Unikaj słońca i solarium na świeżym tatuażu, obcisłych ubrań ocierających skórę oraz drapania. Po wygojeniu chroń tatuaż kremem z filtrem — to najlepszy sposób, by kolory i linie zostały intensywne.",
+        text: "Jak dbać o tatuaż? W skrócie: utrzymuj go w czystości, nawilżaj cienką warstwą kremu, nie zdrapuj strupków i przez pierwsze dwa tygodnie trzymaj z dala od słońca, basenu i sauny. Wierzchnia warstwa skóry goi się około dwóch tygodni, pełne wygojenie trwa do dwóch–trzech miesięcy. Poniżej rozpisujemy to krok po kroku — bo od pielęgnacji zależy, jak Twój tatuaż będzie wyglądał za rok i za dziesięć lat.",
       },
       {
         type: "p",
-        text: "Masz wątpliwości? Napisz do nas — chętnie podpowiemy.",
+        text: "Jedna uwaga na start: to poradnik ogólny. Najważniejsza jest instrukcja, którą dostaniesz od swojej artystki po sesji — zna Twój tatuaż, jego rozmiar, technikę i miejsce na ciele. Jeśli jej zalecenia różnią się od tego, co czytasz poniżej, trzymaj się jej.",
+      },
+      { type: "h2", text: "Pierwsze godziny po sesji" },
+      {
+        type: "p",
+        text: "Pierwszy opatrunek zostaw dokładnie tak długo, jak powiedziała Ci artystka. Studia pracują na różnych rodzajach opatrunków i każdy z nich ma inny czas noszenia — dlatego nie ma tu jednej uniwersalnej liczby godzin.",
+      },
+      {
+        type: "p",
+        text: "Po zdjęciu opatrunku umyj ręce, a dopiero potem dotykaj tatuażu. Delikatnie obmyj go letnią wodą z mydłem o neutralnym pH, spłucz i osusz czystym ręcznikiem papierowym — przykładaj go do skóry, nie pocieraj. Zwykły ręcznik z łazienki odpada: zbiera bakterie i zostawia włókna.",
+      },
+      {
+        type: "p",
+        text: "Na tym etapie tatuaż może być zaczerwieniony, lekko opuchnięty i ciepły, a z rany może sączyć się osocze zmieszane z farbą. To normalna reakcja skóry na zabieg.",
+      },
+      { type: "h2", text: "Mycie i nawilżanie — pierwsze dwa tygodnie" },
+      { type: "h3", text: "Jak myć" },
+      {
+        type: "p",
+        text: "Myj tatuaż jeden do dwóch razy dziennie, zawsze czystymi dłońmi, letnią wodą i mydłem o neutralnym pH. Bez gąbek, bez szorowania, bez gorącej wody. Po umyciu osusz skórę ręcznikiem papierowym i zostaw ją na chwilę, żeby odparowała, zanim nałożysz krem.",
+      },
+      { type: "h3", text: "Jak nawilżać" },
+      {
+        type: "p",
+        text: "Nakładaj cienką warstwę kremu poleconego przez artystkę — tyle, żeby skóra była nawilżona, a nie błyszcząca i tłusta. Gruba warstwa zatyka skórę i utrudnia gojenie. Konkretny preparat dobiera artystka, bo to zależy od techniki i tego, jak reaguje Twoja skóra; dlatego świadomie nie podajemy tu nazw.",
+      },
+      { type: "h2", text: "Gojenie etapami — czego się spodziewać" },
+      { type: "h3", text: "Dni 1–3" },
+      {
+        type: "p",
+        text: "Najbardziej odczuwalny etap. Skóra jest podrażniona, zaczerwieniona, może być lekko obrzęknięta i tkliwa jak po otarciu. Tatuaż wygląda intensywnie i ostro.",
+      },
+      { type: "h3", text: "Dni 4–14" },
+      {
+        type: "p",
+        text: "Zaczyna się łuszczenie i swędzenie — najtrudniejszy moment, bo tatuaż kusi, żeby go podrapać. Nie rób tego. Nie zdrapuj też płatków skóry ani strupków: schodząc przedwcześnie, potrafią zabrać ze sobą farbę i zostawić przejaśnienia, które trzeba potem poprawiać. Jeśli swędzenie doskwiera, poklep skórę przez ubranie albo nałóż cienką warstwę kremu.",
+      },
+      {
+        type: "p",
+        text: "W tym czasie tatuaż może wyglądać mętnie, jakby był pod mleczną warstwą. To normalne — to nowy naskórek. Kolory wrócą.",
+      },
+      { type: "h3", text: "Od 3. tygodnia do 3. miesiąca" },
+      {
+        type: "p",
+        text: "Na oko tatuaż jest już wygojony, ale głębsze warstwy skóry regenerują się nawet do dwóch–trzech miesięcy. Dalej unikaj intensywnego słońca i nawilżaj skórę. Jeśli po pełnym wygojeniu zauważysz drobne przejaśnienia, porozmawiaj z artystką o poprawce — to normalny etap w wielu projektach, nie oznaka, że coś poszło źle.",
+      },
+      { type: "h2", text: "Czego unikać podczas gojenia" },
+      {
+        type: "ul",
+        items: [
+          "Słońca i solarium na świeżym tatuażu — promieniowanie UV najmocniej niszczy młody pigment.",
+          "Basenu, sauny, jacuzzi, jeziora i morza oraz długiej kąpieli w wannie przez około dwa tygodnie — moczenie rozmiękcza gojącą się skórę, a woda niesie bakterie. Prysznic jest w porządku.",
+          "Drapania i zdrapywania strupków.",
+          "Obcisłych ubrań i szorstkich materiałów ocierających tatuaż — postaw na luźne i przewiewne.",
+          "Intensywnego treningu, jeśli tatuaż jest w miejscu mocno pracującym lub obficie się pocisz — pot i tarcie podrażniają ranę. O termin powrotu na siłownię zapytaj artystkę.",
+          "Golenia tatuowanego miejsca do czasu pełnego wygojenia.",
+        ],
+      },
+      { type: "h2", text: "Najczęstsze błędy w pielęgnacji" },
+      {
+        type: "p",
+        text: "Większość problemów z gojeniem nie bierze się z zaniedbania, tylko z nadgorliwości. Oto rzeczy, które widzimy najczęściej:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Zbyt gruba warstwa kremu — skóra potrzebuje oddychać, a nadmiar tłuszczu zatyka pory i wydłuża gojenie.",
+          "Zbyt częste mycie „na wszelki wypadek” — dwa razy dziennie w zupełności wystarczą, częstsze wysusza i drażni.",
+          "Zdrapywanie schodzącej skóry, bo „i tak już odchodzi” — to najprostszy sposób na przejaśnienia i poprawkę.",
+          "Zaklejanie wygojonego tatuażu plastrem lub folią spożywczą, żeby go „chronić” — pod spodem robi się wilgotno i skóra się macera.",
+          "Wakacje nad morzem tydzień po sesji — słońce, sól i piasek to najgorsza możliwa kombinacja dla świeżego tatuażu. Jeśli masz zaplanowany wyjazd, powiedz o tym artystce przed ustaleniem terminu.",
+          "Ocenianie efektu w trakcie łuszczenia — tatuaż wygląda wtedy najgorzej i to nie jest moment na wnioski.",
+        ],
+      },
+      { type: "h2", text: "Kiedy skontaktować się z lekarzem" },
+      {
+        type: "p",
+        text: "Zdecydowana większość tatuaży goi się bez żadnych problemów, ale warto wiedzieć, co powinno zapalić lampkę. Jeśli zaczerwienienie i obrzęk nie ustępują, tylko narastają po kilku dniach, skóra wokół robi się gorąca, pojawia się silny ból, wysięk o nieprzyjemnym zapachu albo gorączka — nie czekaj i skontaktuj się z lekarzem. To samo, jeśli pojawi się wysypka lub reakcja, która Cię niepokoi.",
+      },
+      {
+        type: "p",
+        text: "Nie diagnozujemy przez internet i nie polecamy leków ani maści na własną rękę — od tego jest lekarz. Daj też znać artystce: powinna wiedzieć, jak goi się jej praca.",
+      },
+      { type: "h2", text: "Pielęgnacja po wygojeniu" },
+      {
+        type: "p",
+        text: "Wygojony tatuaż ma jednego głównego wroga: słońce. Krem z filtrem na odsłonięty tatuaż to najprostszy i najskuteczniejszy sposób, żeby linie zostały ostre, a kolory intensywne przez lata. Poza tym wystarczy zwykłe nawilżanie skóry — zadbana skóra to zadbany tatuaż. Warto o tym pamiętać zwłaszcza latem i na wakacjach, bo to wtedy tatuaże blakną najszybciej. Delikatne przygasanie kolorów po latach jest naturalne i nie znaczy, że coś zrobiłaś lub zrobiłeś źle — dobrze pielęgnowany tatuaż po prostu starzeje się wolniej.",
+      },
+      { type: "h2", text: "Masz pytania?" },
+      {
+        type: "p",
+        text: [
+          "Jeśli coś Cię niepokoi albo nie masz pewności, czy Twój tatuaż goi się prawidłowo — ",
+          { text: "napisz do nas", href: "/kontakt" },
+          " albo bezpośrednio do swojej artystki. Lepiej zapytać raz za dużo niż za mało. Więcej odpowiedzi znajdziesz w ",
+          { text: "często zadawanych pytaniach", href: "/faq" },
+          ", a jeśli dopiero planujesz sesję, zajrzyj do poradnika o tym, ",
+          {
+            text: "jak przygotować się do tatuażu",
+            href: "/poradniki/jak-przygotowac-sie-do-tatuazu",
+          },
+          ".",
+        ],
       },
     ],
   },
@@ -67,31 +149,107 @@ export const guides: Guide[] = [
     blocks: [
       {
         type: "lead",
-        text: "Dobre przygotowanie do tatuażu sprawia, że sesja jest wygodniejsza, a gojenie przebiega lepiej. Oto, o co zadbać przed wizytą w studiu.",
+        text: "Jak przygotować się do tatuażu? Najkrócej: wyśpij się, zjedz porządny posiłek, nawodnij się, odpuść alkohol na minimum dobę przed sesją i ubierz się tak, żeby artystka miała swobodny dostęp do tatuowanego miejsca. Dobre przygotowanie realnie się opłaca — sesja jest wygodniejsza, łatwiej wytrzymać dłuższy siedzenie, a skóra lepiej się goi.",
+      },
+      { type: "h2", text: "Tydzień przed" },
+      {
+        type: "p",
+        text: "Nie opalaj miejsca, które chcesz wytatuować — ani na słońcu, ani w solarium. Tatuowanie spalonej lub mocno opalonej skóry to zły pomysł, a poparzenie potrafi przesunąć termin sesji. Jeśli skóra w tym miejscu jest przesuszona, nawilżaj ją zwyczajnie przez kilka dni; zadbana skóra lepiej przyjmuje pigment.",
+      },
+      {
+        type: "p",
+        text: "To też dobry moment, żeby dopiąć projekt i wycenę. Jeśli jeszcze nie wiesz, od czego zależy koszt, zajrzyj na stronę z cenami — wycena jest bezpłatna i niewiążąca.",
       },
       { type: "h2", text: "Dzień przed" },
       {
-        type: "p",
-        text: "Wyśpij się, nawodnij organizm i unikaj alkoholu przez minimum 24 godziny (alkohol rozrzedza krew). Nie opalaj miejsca, które chcesz wytatuować.",
+        type: "ul",
+        items: [
+          "Wyśpij się — zmęczenie wyraźnie obniża próg bólu i odporność na dłuższą sesję.",
+          "Nawadniaj się przez cały dzień, nie tylko rano.",
+          "Odpuść alkohol na minimum 24 godziny — rozrzedza krew, przez co skóra mocniej krwawi, a pigment gorzej się osadza.",
+          "Nie opalaj tatuowanego miejsca.",
+          "Jeśli tatuaż wypada w miejscu, które golisz, dopytaj artystkę, czy chce je ogolone — zwykle robi to sama przed sesją.",
+        ],
       },
       { type: "h2", text: "W dniu wizyty" },
       {
         type: "p",
-        text: "Zjedz porządny posiłek przed sesją — pomaga utrzymać dobre samopoczucie. Ubierz się wygodnie, tak aby artystka miała swobodny dostęp do tatuowanego miejsca. Skórę zostaw czystą i nienatłuszczoną kremem.",
+        text: "Zjedz porządny posiłek przed wyjściem z domu — to najprostsza rzecz, jaką możesz zrobić dla swojego samopoczucia podczas sesji. Tatuowanie na czczo to prosta droga do osłabienia i zawrotów głowy. Weź coś do picia, a na dłuższą sesję również przekąskę.",
+      },
+      {
+        type: "p",
+        text: "Skórę zostaw czystą i nienatłuszczoną — bez balsamu, olejku czy grubej warstwy kremu w tatuowanym miejscu. Umyj się przed wyjściem, zwłaszcza jeśli tatuaż wypada w miejscu takim jak stopa czy kark.",
+      },
+      { type: "h3", text: "Jak się ubrać" },
+      {
+        type: "p",
+        text: "Ubierz się luźno i wygodnie, tak żeby artystka miała swobodny dostęp do tatuowanego miejsca bez gimnastyki z Twojej strony. Tatuaż na udzie — krótkie spodenki zamiast obcisłych jeansów. Na barku czy łopatce — koszulka na szerokich ramiączkach albo taka, którą można podwinąć. Załóż też coś, czego nie żal: farba potrafi zostawić ślad na ubraniu. Po sesji ta sama zasada działa dalej — świeży tatuaż nie lubi ocierających materiałów.",
       },
       { type: "h2", text: "Co zabrać" },
       {
+        type: "ul",
+        items: [
+          "Dokument potwierdzający pełnoletność — bez tego nie zaczniemy sesji.",
+          "Wodę i przekąskę, jeśli sesja ma potrwać dłużej.",
+          "Referencje i inspiracje, jeśli masz konkretny pomysł — im więcej materiału, tym łatwiej trafić w Twój gust.",
+          "Słuchawki, książkę albo cokolwiek, co pomoże Ci zająć głowę podczas dłuższego siedzenia.",
+          "Bluzę lub coś ciepłego — na dłuższej sesji łatwo zmarznąć od bezruchu.",
+        ],
+      },
+      { type: "h2", text: "Ile trwa sesja i czego się spodziewać" },
+      {
         type: "p",
-        text: "Weź dokument potwierdzający pełnoletność, ewentualnie przekąskę i wodę na dłuższą sesję oraz referencje lub inspiracje, jeśli masz konkretny pomysł.",
+        text: "To zależy od projektu: mały wzór potrafi zająć niecałą godzinę, rozbudowana kompozycja — kilka godzin albo kilka sesji rozłożonych w czasie. Przybliżony czas ustalisz z artystką przy wycenie, więc będziesz wiedzieć, na co się nastawić.",
+      },
+      {
+        type: "p",
+        text: "Sesja zaczyna się od rozmowy o projekcie, doboru rozmiaru i umiejscowienia oraz przeniesienia wzoru na skórę. Dopiero gdy wszystko Ci pasuje, zaczyna się tatuowanie. To jest moment na uwagi — łatwiej przesunąć szablon niż poprawiać gotowy tatuaż. W trakcie możesz poprosić o przerwę; nikt nie oczekuje, że przesiedzisz kilka godzin bez ruchu.",
+      },
+      { type: "h2", text: "Czego nie robić przed sesją" },
+      {
+        type: "ul",
+        items: [
+          "Nie przychodź na kacu ani po nieprzespanej nocy — to najczęstszy powód słabego samopoczucia na fotelu.",
+          "Nie bierz na własną rękę środków przeciwbólowych „na zapas”. Jeśli przyjmujesz leki na stałe albo myślisz o znieczuleniu, ustal to wcześniej z artystką i z lekarzem — nie improwizuj w dniu sesji.",
+          "Nie smaruj skóry balsamem ani olejkiem przed wizytą.",
+          "Nie przychodź głodna ani głodny „bo stres” — to działa dokładnie odwrotnie.",
+          "Nie decyduj o projekcie w ostatniej chwili, na fotelu. Tatuaż zostaje na lata; jeśli masz wątpliwości, lepiej przełożyć termin.",
+        ],
+      },
+      { type: "h3", text: "Pierwszy tatuaż" },
+      {
+        type: "p",
+        text: "Jeśli to Twój pierwszy raz, powiedz o tym wprost — to żaden wstyd, a artystka inaczej poprowadzi wizytę: więcej wyjaśni, częściej zapyta o samopoczucie i zaproponuje przerwę, zanim sama o nią poprosisz. Na pierwszy tatuaż warto też wybrać miejsce, które u większości osób jest łatwiejsze do przesiedzenia, na przykład przedramię czy ramię. To dobry temat do rozmowy przy wycenie.",
       },
       { type: "h2", text: "O czym powiedzieć artystce" },
       {
         type: "p",
-        text: "Powiedz o uczuleniach, przyjmowanych lekach czy problemach skórnych. Jeśli masz wątpliwości zdrowotne, skonsultuj je wcześniej z lekarzem.",
+        text: "Powiedz o uczuleniach, przyjmowanych lekach, problemach skórnych i wszystkim, co dotyczy tatuowanego miejsca — bliznach, znamionach, świeżych urazach. To nie jest wścibstwo: te informacje wpływają na to, jak i gdzie da się zrobić projekt.",
       },
       {
         type: "p",
-        text: "Gotowa/y? Umów się z wybraną artystką przez Instagram — a jeśli nie wiesz, od czego zacząć, napisz do nas, pomożemy ustalić szczegóły.",
+        text: "Jeśli masz wątpliwości zdrowotne — chorujesz przewlekle, bierzesz leki na stałe, jesteś w ciąży lub karmisz — skonsultuj to wcześniej z lekarzem. Artystka nie zastąpi porady lekarskiej, a decyzję o terminie sesji lepiej podjąć przed wizytą niż na fotelu.",
+      },
+      { type: "h2", text: "Formalności" },
+      {
+        type: "p",
+        text: "Tatuaże robimy wyłącznie osobom pełnoletnim i zawsze prosimy o dokument — nawet jeśli wyglądasz na swoje lata. Przed sesją podpiszesz też zgodę i potwierdzisz, że znasz zasady; to standard, który chroni obie strony. Zasady studia znajdziesz w regulaminie, a warunki rezerwacji i ewentualnego zadatku ustalisz bezpośrednio z artystką przy umawianiu terminu.",
+      },
+      { type: "h2", text: "Gotowa lub gotowy?" },
+      {
+        type: "p",
+        text: [
+          "Umów się z wybraną artystką przez Instagram, a jeśli nie wiesz, od czego zacząć — ",
+          { text: "napisz do nas", href: "/kontakt" },
+          ", pomożemy ustalić szczegóły. Zanim to zrobisz, sprawdź, ",
+          { text: "od czego zależy cena", href: "/cennik" },
+          ", a po sesji wróć po ",
+          {
+            text: "instrukcję pielęgnacji tatuażu",
+            href: "/poradniki/jak-dbac-o-tatuaz",
+          },
+          " — od niej zależy efekt końcowy.",
+        ],
       },
     ],
   },
