@@ -23,6 +23,7 @@ export const GUIDE_SLUGS = [
   "jak-dbac-o-tatuaz",
   "jak-przygotowac-sie-do-tatuazu",
   "ile-kosztuje-tatuaz-warszawa",
+  "czy-tatuaz-boli",
 ] as const;
 
 export const ARTIST_SLUGS = [

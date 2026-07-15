@@ -394,6 +394,138 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: "czy-tatuaz-boli",
+    heading: "Czy tatuaż boli?",
+    metaTitle: "Czy tatuaż boli? Skala bólu wg miejsca na ciele | K2inked",
+    description:
+      "Czy tatuaż boli? Tak, ale ból jest do zniesienia i bardzo zależy od miejsca na ciele. Sprawdź, gdzie boli najbardziej, od czego to zależy i jak zmniejszyć dyskomfort.",
+    excerpt:
+      "Tak, czuć to — ale ból jest do zniesienia i mocno zależy od miejsca. Gdzie boli najbardziej, od czego to zależy i jak sobie pomóc.",
+    datePublished: "2026-07-15",
+    blocks: [
+      {
+        type: "lead",
+        text: "Czy tatuaż boli? Tak — czuć to, nie ma sensu udawać, że jest inaczej. Ale u zdecydowanej większości osób ból jest całkowicie do zniesienia i bliżej mu do długotrwałego dyskomfortu niż do ostrego cierpienia. Najważniejsze: bardzo dużo zależy od miejsca na ciele i od Ciebie. Ludzie, którzy wychodzą po pierwszej sesji i od razu planują kolejną, to norma, a nie wyjątek.",
+      },
+      { type: "h2", text: "Jak to właściwie boli" },
+      {
+        type: "p",
+        text: "Najczęstsze porównanie to uczucie drapania rozgrzaną igłą albo mocnego zadrapania kota, które ktoś ponawia w tym samym miejscu. Bywa też opisywane jako pieczenie lub uczucie ostrego słońca na spalonej skórze. To ból tępy i monotonny, nie przeszywający — dlatego można się do niego przyzwyczaić.",
+      },
+      {
+        type: "p",
+        text: "I to jest właśnie kluczowa różnica: po kilkunastu minutach organizm zwykle „przestawia się” na nowe bodźce i pierwsze minuty są najgorsze. Wiele osób mówi, że najtrudniejsze jest oczekiwanie przed sesją, a nie sama sesja.",
+      },
+      { type: "h2", text: "Gdzie tatuaż boli najbardziej — skala wg miejsca" },
+      {
+        type: "p",
+        text: "Miejsce na ciele to zdecydowanie najważniejszy czynnik — różnica między przedramieniem a żebrami jest znacznie większa niż między dwiema osobami tatuowanymi w tym samym miejscu. Zasada jest prosta: im cieńsza skóra i im bliżej kości lub większego skupiska zakończeń nerwowych, tym mocniej to poczujesz. Poniższe zestawienie to tendencje, nie pewniki — u każdego bywa inaczej:",
+      },
+      { type: "h3", text: "Zwykle łatwiej do przesiedzenia" },
+      {
+        type: "ul",
+        items: [
+          "Przedramię — u większości osób najłagodniejsze miejsce, częsty wybór na pierwszy tatuaż.",
+          "Zewnętrzna strona ramienia i bark — dużo mięśnia, mało wrażliwych zakończeń.",
+          "Łydka i udo (zewnętrzna strona) — sporo tkanki, spokojna praca.",
+          "Plecy w partiach mięśniowych, z dala od kręgosłupa i łopatek.",
+        ],
+      },
+      { type: "h3", text: "Zwykle bardziej wymagające" },
+      {
+        type: "ul",
+        items: [
+          "Żebra i mostek — cienka skóra bezpośrednio na kości, do tego ruch przy każdym oddechu.",
+          "Kręgosłup — kość tuż pod skórą.",
+          "Stopa i kostka — mało tkanki, dużo zakończeń nerwowych.",
+          "Dłonie i palce — wrażliwe, a do tego pigment gorzej się tam utrzymuje.",
+          "Wewnętrzna strona ramienia i pachwina — bardzo cienka, delikatna skóra.",
+          "Kark i szyja — wrażliwe i trudne do rozluźnienia.",
+        ],
+      },
+      {
+        type: "p",
+        text: [
+          "Jeśli to Twój pierwszy tatuaż i wahasz się nad miejscem, powiedz o tym przy wycenie — artystka podpowie, co realnie oznacza wybrana lokalizacja. Miejsce wpływa zresztą nie tylko na odczucia, ale też na ",
+          {
+            text: "cenę i czas pracy",
+            href: "/poradniki/ile-kosztuje-tatuaz-warszawa",
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Od czego zależy, jak mocno poczujesz" },
+      {
+        type: "ul",
+        items: [
+          "Twój indywidualny próg bólu — najbardziej niedoceniany czynnik; te same żebra jedna osoba przesiedzi spokojnie, a druga z trudem.",
+          "Sen i samopoczucie — niewyspanie realnie obniża odporność na ból.",
+          "Nawodnienie i posiłek — na czczo i odwodniona lub odwodniony poczujesz więcej.",
+          "Stres — napięte mięśnie i spodziewanie się najgorszego nakręcają odczucia.",
+          "Długość sesji — po kilku godzinach skóra jest po prostu zmęczona i wszystko boli bardziej niż na starcie.",
+          "Rodzaj pracy — kontury i gęste wypełnienia czuć inaczej niż delikatne cieniowanie.",
+        ],
+      },
+      { type: "h2", text: "Jak zmniejszyć dyskomfort" },
+      {
+        type: "p",
+        text: [
+          "Najwięcej załatwia dobre przygotowanie — szczegółowo rozpisaliśmy je w poradniku o tym, ",
+          {
+            text: "jak przygotować się do tatuażu",
+            href: "/poradniki/jak-przygotowac-sie-do-tatuazu",
+          },
+          ". W skrócie:",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          "Wyśpij się — to działa najmocniej ze wszystkiego na tej liście.",
+          "Zjedz porządny posiłek przed sesją i weź coś do picia oraz przekąskę na dłużej.",
+          "Oddychaj spokojnie i równo zamiast wstrzymywać oddech — napięcie nasila ból.",
+          "Poproś o przerwę, kiedy jej potrzebujesz. Nikt nie oczekuje, że przesiedzisz kilka godzin bez ruchu, a krótka pauza potrafi zresetować odczucia.",
+          "Zajmij głowę — muzyka, podcast, rozmowa. Skupianie się na bólu go wyostrza.",
+          "Ubierz się wygodnie, żeby nie leżeć w niewygodnej pozycji.",
+        ],
+      },
+      {
+        type: "p",
+        text: [
+          "Czego nie robić: nie pij alkoholu „na odwagę” — rozrzedza krew, przez co skóra mocniej krwawi, a pigment gorzej się osadza. Nie bierz też środków przeciwbólowych ani preparatów znieczulających na własną rękę. Jeśli myślisz o znieczuleniu albo przyjmujesz leki na stałe, ustal to wcześniej z artystką, a wątpliwości zdrowotne skonsultuj z lekarzem — nie improwizuj w dniu sesji. Masz pytania? ",
+          { text: "Napisz do nas", href: "/kontakt" },
+          ", chętnie rozwiejemy wątpliwości przed wizytą.",
+        ],
+      },
+      { type: "h2", text: "Pierwszy tatuaż — czego się spodziewać" },
+      {
+        type: "p",
+        text: "Największym źródłem stresu przy pierwszym tatuażu jest nieznane, a nie sam ból. Dlatego powiedz artystce wprost, że to Twój pierwszy raz — poprowadzi wizytę inaczej: więcej wyjaśni, częściej zapyta o samopoczucie i sama zaproponuje przerwę. Pierwsze ukłucie zwykle rozwiewa większość obaw, bo okazuje się, że wyobraźnia była gorsza od rzeczywistości.",
+      },
+      {
+        type: "p",
+        text: "Jeśli martwisz się, że zasłabniesz — zdarza się to rzadko i prawie zawsze z tych samych powodów: pusty żołądek, niewyspanie albo stres. Wszystkie trzy da się załatwić wcześniej. Powiedz też od razu, jeśli źle znosisz widok krwi albo igieł; to żaden wstyd i lepiej, żeby artystka o tym wiedziała, zanim usiądziesz na fotelu.",
+      },
+      { type: "h2", text: "Ile trwa sesja" },
+      {
+        type: "p",
+        text: "Mały wzór to często kwestia niecałej godziny — tyle wytrzyma praktycznie każdy. Rozbudowane projekty rozkładamy na kilka sesji, i to nie tylko ze względu na Twój komfort: po kilku godzinach skóra jest podrażniona i gorzej przyjmuje pigment, więc dalsza praca po prostu nie ma sensu. Przybliżony czas ustalisz z artystką przy wycenie.",
+      },
+      { type: "h2", text: "Czy warto?" },
+      {
+        type: "p",
+        text: [
+          "Ból jest chwilowy i kończy się razem z sesją — tatuaż zostaje na lata. Prawie nikt nie żałuje z powodu bólu; żałuje się pośpiechu przy wyborze wzoru albo studia. Jeśli więc wahasz się wyłącznie z powodu bólu, to zwykle najsłabszy powód, żeby odpuścić. Po sesji zostaje najważniejsze — ",
+          {
+            text: "właściwa pielęgnacja",
+            href: "/poradniki/jak-dbac-o-tatuaz",
+          },
+          ", bo to od niej zależy efekt końcowy.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const getGuide = (slug: string): Guide | undefined =>

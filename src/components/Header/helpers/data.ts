@@ -51,6 +51,7 @@ const GUIDE_LABEL: Record<GuideSlug, string> = {
   "jak-dbac-o-tatuaz": "JAK DBAĆ O TATUAŻ",
   "jak-przygotowac-sie-do-tatuazu": "JAK SIĘ PRZYGOTOWAĆ",
   "ile-kosztuje-tatuaz-warszawa": "ILE KOSZTUJE TATUAŻ",
+  "czy-tatuaz-boli": "CZY TATUAŻ BOLI",
 } as const;
 
 const guideLink = (slug: GuideSlug): NavLink => ({
