@@ -1,5 +1,6 @@
 // Helpery JSON-LD (schema.org) renderowane server-side jako surowy <script>.
 // Studio jest opisane TattooParlor w layout.tsx (@id poniżej) — tu referujemy.
+import { inlineToText, type RichText } from "./richText";
 
 const SITE = "https://www.k2inked.pl";
 const STUDIO_ID = `${SITE}/#studio`;
@@ -48,7 +49,7 @@ export const breadcrumbLd = (crumbs: Crumb[]): string =>
     })),
   });
 
-type FaqItem = { q: string; a: string };
+type FaqItem = { q: string; a: RichText };
 
 type ArticleArgs = {
   headline: string;
@@ -90,6 +91,7 @@ export const faqPageLd = (items: FaqItem[]): string =>
     mainEntity: items.map((it) => ({
       "@type": "Question",
       name: it.q,
-      acceptedAnswer: { "@type": "Answer", text: it.a },
+      // Spłaszczone: odpowiedź może nieść linki, schema wymaga czystego tekstu.
+      acceptedAnswer: { "@type": "Answer", text: inlineToText(it.a) },
     })),
   });

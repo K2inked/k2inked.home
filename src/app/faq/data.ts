@@ -1,4 +1,8 @@
-export type FaqItem = { q: string; a: string };
+import type { RichText } from "@/components/Prose/ProseSections";
+
+// `a` przyjmuje zwykły string albo tablicę kawałków z linkami wewnętrznymi
+// (patrz RichText). Schema FAQPage dostaje wersję spłaszczoną — inlineToText.
+export type FaqItem = { q: string; a: RichText };
 
 // Pełne FAQ (/faq). Treść z zaakceptowanego raportu MSTUDIO.
 // Luki bez danych klienta sfrazowane generycznie; pytanie o cover-up pominięte.

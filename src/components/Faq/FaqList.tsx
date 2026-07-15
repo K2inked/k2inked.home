@@ -1,4 +1,5 @@
 import type { FaqItem } from "@/app/faq/data";
+import { renderInline } from "@/components/Prose/ProseSections";
 
 // Lista FAQ jako natywny <details> akordeon — dostępna, bez JS, treść w DOM
 // (widoczna dla Google i AI search). Kolory dziedziczone (border-current),
@@ -20,7 +21,7 @@ export const FaqList = ({ items }: { items: FaqItem[] }) => (
           </span>
         </summary>
         <p className="pr-8 pb-5 text-sm leading-7 font-light tracking-[0.04em] opacity-90">
-          {item.a}
+          {renderInline(item.a)}
         </p>
       </details>
     ))}
