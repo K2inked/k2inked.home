@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, Fragment } from "react";
+import Link from "next/link";
 import type { NavGroup, NavNode } from "@/components/Header/helpers/data";
 import { hasActive } from "@/components/Header/helpers";
 import { IconChevron } from "@/icons/IconChevron";
@@ -20,16 +21,42 @@ export const GroupNode = ({ node, depth, pathname, renderNode }: Props) => {
 
   useEffect(() => setManualOpen(null), [pathname]);
 
+  const toggle = () => setManualOpen((v) => (v === null ? !open : !v));
+  const chevron = (
+    <IconChevron
+      className={`size-6 transition ${open ? "rotate-270" : "rotate-90"}`}
+    />
+  );
+
   return (
     <div>
-      <button
-        className="flex w-full items-center gap-3 py-4 text-left text-light"
-        aria-expanded={open}
-        onClick={() => setManualOpen((v) => (v === null ? !open : !v))}
-      >
-        <span className="tracking-[0.14em]">{node.label}</span>
-        <IconChevron className={`size-6 transition ${open ? "rotate-270" : "rotate-90"}`} />
-      </button>
+      {node.href ? (
+        <div className="text-light flex w-full items-center gap-3 py-4 text-left">
+          <Link
+            href={node.href}
+            className={`tracking-[0.14em] ${childActive ? "font-bold" : ""}`}
+          >
+            {node.label}
+          </Link>
+          <button
+            type="button"
+            aria-expanded={open}
+            aria-label={`${open ? "Zwiń" : "Rozwiń"} podmenu ${node.label}`}
+            onClick={toggle}
+          >
+            {chevron}
+          </button>
+        </div>
+      ) : (
+        <button
+          className="text-light flex w-full items-center gap-3 py-4 text-left"
+          aria-expanded={open}
+          onClick={toggle}
+        >
+          <span className="tracking-[0.14em]">{node.label}</span>
+          {chevron}
+        </button>
+      )}
 
       {open && (
         <div className="pl-4">

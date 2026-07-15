@@ -1,4 +1,11 @@
-import { InternalHref, path, type ArtistSlug, STATIC_ROUTES } from "@/routes";
+import {
+  GUIDE_SLUGS,
+  InternalHref,
+  path,
+  type ArtistSlug,
+  type GuideSlug,
+  STATIC_ROUTES,
+} from "@/routes";
 
 export type NavLink = {
   kind: "link";
@@ -13,6 +20,9 @@ export type NavGroup = {
   collapsible?: boolean;
   items: readonly NavNode[];
   defaultOpen?: boolean;
+  // Gdy podane — etykieta grupy jest linkiem, a chevron osobnym przyciskiem
+  // (grupa prowadzi na własną stronę, np. PORADNIKI → /poradniki).
+  href?: InternalHref;
 };
 
 export type NavNode = NavLink | NavGroup;
@@ -36,12 +46,28 @@ const artistLink = (slug: ArtistSlug): NavLink => ({
   isActive: (p) => p.startsWith(path.artist(slug)),
 });
 
+// Etykiety krótkie — dropdown ma 280 px szerokości, dłuższe by się zawijały.
+const GUIDE_LABEL: Record<GuideSlug, string> = {
+  "jak-dbac-o-tatuaz": "JAK DBAĆ O TATUAŻ",
+  "jak-przygotowac-sie-do-tatuazu": "JAK SIĘ PRZYGOTOWAĆ",
+} as const;
+
+const guideLink = (slug: GuideSlug): NavLink => ({
+  kind: "link",
+  label: GUIDE_LABEL[slug],
+  href: path.guide(slug),
+  isActive: (p) => p === path.guide(slug),
+});
+
 const tattooArtists = (
   ["klaudia", "kari", "sonia", "ewelina", "mirella", "kuba", "kinia", "kamila"] as const
 ).map(artistLink);
 
 const piercingArtists = (["emi"] as const).map(artistLink);
 
+const guideLinks = GUIDE_SLUGS.map(guideLink);
+
+// REGULAMIN i PIERCING celowo poza paskiem — zostają w stopce.
 export const NAV_MOBILE = [
   { kind: "link", label: "STRONA GŁÓWNA", href: STATIC_ROUTES.HOME },
   {
@@ -64,7 +90,15 @@ export const NAV_MOBILE = [
     ],
   },
   { kind: "link", label: "GALERIA", href: STATIC_ROUTES.GALLERY },
-  { kind: "link", label: "REGULAMIN", href: STATIC_ROUTES.REGULATIONS },
+  { kind: "link", label: "CENNIK", href: STATIC_ROUTES.PRICING },
+  {
+    kind: "group",
+    label: "PORADNIKI",
+    collapsible: true,
+    href: STATIC_ROUTES.GUIDES,
+    items: guideLinks,
+  },
+  { kind: "link", label: "FAQ", href: STATIC_ROUTES.FAQ },
   { kind: "link", label: "KONTAKT", href: STATIC_ROUTES.CONTACT },
 ] as const satisfies readonly NavNode[];
 

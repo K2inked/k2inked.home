@@ -1,7 +1,9 @@
 export type StaticRoute = (typeof STATIC_ROUTES)[keyof typeof STATIC_ROUTES];
 export type ArtistSlug = (typeof ARTIST_SLUGS)[number];
 export type ArtistPath = `/${ArtistSlug}`;
-export type InternalHref = StaticRoute | ArtistPath;
+export type GuideSlug = (typeof GUIDE_SLUGS)[number];
+export type GuidePath = `${typeof STATIC_ROUTES.GUIDES}/${GuideSlug}`;
+export type InternalHref = StaticRoute | ArtistPath | GuidePath;
 
 export const STATIC_ROUTES = {
   HOME: "/",
@@ -14,6 +16,13 @@ export const STATIC_ROUTES = {
   COOKIES_POLICY: "/polityka-cookies",
   CONTACT: "/kontakt",
 } as const;
+
+// Slugi poradników — jak ARTIST_SLUGS: dodanie artykułu zaczyna się TUTAJ,
+// dzięki czemu link do nieistniejącego poradnika wywala build, a nie produkcję.
+export const GUIDE_SLUGS = [
+  "jak-dbac-o-tatuaz",
+  "jak-przygotowac-sie-do-tatuazu",
+] as const;
 
 export const ARTIST_SLUGS = [
   "klaudia",
@@ -30,6 +39,7 @@ export const ARTIST_SLUGS = [
 export const path = {
   ...STATIC_ROUTES,
   artist: (slug: ArtistSlug) => `/${slug}` as ArtistPath,
+  guide: (slug: GuideSlug) => `${STATIC_ROUTES.GUIDES}/${slug}` as GuidePath,
 };
 
 export const RESERVED_SLUGS = new Set(

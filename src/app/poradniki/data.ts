@@ -1,7 +1,8 @@
 import type { ProseBlock } from "@/components/Prose/ProseSections";
+import type { GuideSlug } from "@/routes";
 
 export type Guide = {
-  slug: string;
+  slug: GuideSlug;
   heading: string; // H1 na stronie
   metaTitle: string;
   description: string;

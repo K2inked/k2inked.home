@@ -57,7 +57,7 @@ export const Nav = () => {
   return (
     <nav
       aria-label="Nawigacja desktopowa"
-      className="text-light min-h-0 flex desktop:gap-22.5 tablet:gap-10 justify-center items-center"
+      className="text-light desktop:gap-12 laptop:gap-6 tablet:gap-3 flex min-h-0 items-center justify-center text-sm"
     >
       {NAV_DESKTOP.map((n, i) => (
         <Fragment key={i}>{renderNode(n)}</Fragment>

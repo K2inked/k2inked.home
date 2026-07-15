@@ -24,7 +24,7 @@ export const HeaderTabAndDesk = ({
         isHero ? "absolute bg-transparent" : "bg-darker drop-shadow-lg/20 sticky",
       ].join(" ")}
     >
-      <Container className="tablet:px-6 desktop:px-0 flex h-35 items-center justify-between">
+      <Container className="tablet:px-4 desktop:px-0 flex h-35 items-center justify-between">
         <Logo className="w-27.5" logoClassName="link-hover" />
         <Nav />
         <SocialmediaTray

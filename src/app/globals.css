@@ -22,6 +22,10 @@
 
   --breakpoint-mobile: 320px;
   --breakpoint-tablet: 768px;
+  /* Próg pośredni dla paska nawigacji — NIE mieszać z domyślnym `lg:`:
+     własne breakpointy trafiają do CSS przed domyślnymi, więc `lg:` (1024)
+     nadpisywałoby `desktop:` (1280) mimo wyższego progu. */
+  --breakpoint-laptop: 1024px;
   --breakpoint-desktop: 1280px;
 
   --swiper-navigation-size: 44px;

@@ -18,6 +18,9 @@ export const FooterNav = () => (
     <Link href={STATIC_ROUTES.GUIDES} className="link-hover">
       PORADNIKI
     </Link>
+    <Link href={STATIC_ROUTES.CONTACT} className="link-hover">
+      KONTAKT
+    </Link>
     <Link
       href={STATIC_ROUTES.REGULATIONS}
       className="link-hover flex flex-col "

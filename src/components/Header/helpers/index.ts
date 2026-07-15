@@ -48,6 +48,7 @@ export const hasActive = (node: NavNode, pathname: string): boolean => {
     return node.isActive ? node.isActive(pathname) : pathname === node.href;
   }
   if (node.kind === "group") {
+    if (node.href && pathname === node.href) return true;
     return node.items.some((c) => hasActive(c, pathname));
   }
   return false;
