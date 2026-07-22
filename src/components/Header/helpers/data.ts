@@ -69,7 +69,8 @@ const piercingArtists = (["emi"] as const).map(artistLink);
 
 const guideLinks = GUIDE_SLUGS.map(guideLink);
 
-// REGULAMIN i PIERCING celowo poza paskiem — zostają w stopce.
+// REGULAMIN celowo poza paskiem — zostaje w stopce. PIERCING jest w pasku
+// (osobna pozycja) ORAZ w stopce.
 export const NAV_MOBILE = [
   { kind: "link", label: "STRONA GŁÓWNA", href: STATIC_ROUTES.HOME },
   {
@@ -93,6 +94,7 @@ export const NAV_MOBILE = [
   },
   { kind: "link", label: "GALERIA", href: STATIC_ROUTES.GALLERY },
   { kind: "link", label: "CENNIK", href: STATIC_ROUTES.PRICING },
+  { kind: "link", label: "PIERCING", href: STATIC_ROUTES.PIERCING },
   {
     kind: "group",
     label: "PORADNIKI",
