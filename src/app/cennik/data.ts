@@ -1,4 +1,5 @@
 import type { ProseBlock } from "@/components/Prose/ProseSections";
+import { PIERCING_PRICE_GROUPS } from "@/data/piercingPrices";
 
 // Cennik bez konkretnych kwot (klient ich nie podał) — strona odpowiada na
 // „ile kosztuje tatuaż” modelem wyceny i CTA. Kwoty dodamy, gdy klient poda.
@@ -47,6 +48,16 @@ export const cennikData: ProseBlock[] = [
     type: "p",
     text: "W cenie tatuażu otrzymujesz: indywidualny projekt przygotowany specjalnie dla Ciebie, sterylne, jednorazowe igły, certyfikowane farby oraz instrukcje pielęgnacji po sesji. Dbamy o higienę i komfort na każdym etapie.",
   },
+  { type: "h2", text: "Cennik piercingu" },
+  {
+    type: "p",
+    text: [
+      "Przekłucia wykonuje certyfikowana piercerka Emi — poniżej aktualny cennik. Więcej o zabiegu i pielęgnacji znajdziesz na stronie ",
+      { text: "piercing w K2inked", href: "/piercing" },
+      ".",
+    ],
+  },
+  { type: "prices", groups: PIERCING_PRICE_GROUPS },
   { type: "h2", text: "Jak umówić wycenę" },
   {
     type: "p",

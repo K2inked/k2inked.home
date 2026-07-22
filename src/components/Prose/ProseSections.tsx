@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import type { InternalHref } from "@/routes";
 import type { RichText } from "@/utils/richText";
+import type { PriceGroup } from "@/data/piercingPrices";
 
 // Lekki, współdzielony renderer treści dla stron marketingowych (cennik,
 // piercing, poradniki). Treść trzymana w data.ts jako bloki — UI oddzielone.
@@ -21,7 +22,8 @@ export type ProseBlock =
       type: "links";
       title?: string;
       items: { label: string; href: InternalHref }[];
-    };
+    }
+  | { type: "prices"; groups: PriceGroup[] };
 
 const linkClass = "underline underline-offset-4 link-hover";
 
@@ -103,6 +105,34 @@ const renderBlock = (block: ProseBlock, i: number): ReactNode => {
             ))}
           </ul>
         </nav>
+      );
+    case "prices":
+      return (
+        <div key={i} className="mb-5">
+          {block.groups.map((group, g) => (
+            <div key={g} className="mb-8 last:mb-0">
+              <h3 className="font-marcellus-sc mt-6 mb-3 text-base tracking-[0.1em]">
+                {group.heading}
+              </h3>
+              <dl className="flex flex-col text-sm leading-7 font-light">
+                {group.rows.map((row, r) => (
+                  <div
+                    key={r}
+                    className="border-current/10 flex items-baseline justify-between gap-4 border-b py-1.5 tracking-[0.04em] last:border-b-0"
+                  >
+                    <dt>{row.label}</dt>
+                    <dd className="shrink-0 whitespace-nowrap">{row.price}</dd>
+                  </div>
+                ))}
+              </dl>
+              {group.note && (
+                <p className="mt-2 text-xs leading-6 font-light tracking-[0.04em] opacity-70">
+                  {group.note}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
       );
     default:
       return null;

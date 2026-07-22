@@ -9,7 +9,7 @@ import { TEAM_BY_SLUG } from "@/data/teamData";
 export const metadata: Metadata = {
   title: { absolute: "Piercing Warszawa — Śródmieście | K2inked" },
   description:
-    "Profesjonalny piercing w Warszawie (Śródmieście, ul. Krucza 47A). Przekłucia wykonuje certyfikowana piercerka Emi — sterylne narzędzia, bezpieczna biżuteria.",
+    "Profesjonalny piercing w Warszawie (Śródmieście, ul. Krucza 47A). Przekłucia wykonuje certyfikowana piercerka Emi — sterylne narzędzia, bezpieczna biżuteria. Sprawdź cennik.",
   alternates: { canonical: "/piercing" },
   openGraph: { images: ["/opengraph-image"] },
 };

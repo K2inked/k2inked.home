@@ -1,5 +1,6 @@
 import type { ProseBlock } from "@/components/Prose/ProseSections";
 import type { FaqItem } from "@/app/faq/data";
+import { PIERCING_PRICE_GROUPS } from "@/data/piercingPrices";
 
 // Strona piercingu — wersja generyczna (klient nie podał listy przekłuć ani
 // cen). Treść z zaakceptowanego raportu C1; szczegóły kierujemy do Emi.
@@ -8,11 +9,12 @@ export const piercingData: ProseBlock[] = [
     type: "lead",
     text: "Szukasz profesjonalnego piercingu w Warszawie? W K2inked przekłucia wykonuje Emi — certyfikowana piercerka, która dba o bezpieczeństwo, higienę i dobór odpowiedniej biżuterii. Jesteśmy w sercu miasta, przy ul. Kruczej 47A na Śródmieściu.",
   },
-  { type: "h2", text: "Jakie przekłucia wykonujemy" },
+  { type: "h2", text: "Cennik piercingu" },
   {
     type: "p",
-    text: "Emi wykonuje profesjonalne przekłucia i dobiera rozwiązanie pod Twoją anatomię i oczekiwania. Pełen zakres dostępnych przekłuć oraz biżuterii ustalisz z nią bezpośrednio — napisz na jej profilu na Instagramie, a doradzi najlepszą opcję dla Ciebie.",
+    text: "Poniżej aktualny cennik przekłuć. Dobór biżuterii i szczegóły ustalisz z Emi — napisz na jej profilu na Instagramie, a doradzi najlepszą opcję pod Twoją anatomię i oczekiwania.",
   },
+  { type: "prices", groups: PIERCING_PRICE_GROUPS },
   { type: "h2", text: "Bezpieczeństwo i higiena" },
   {
     type: "p",
